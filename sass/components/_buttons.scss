@@ -1,0 +1,65 @@
+/*Button More*/
+.btn-outline-light {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: transparent;
+    text-transform: uppercase;
+}
+
+/*Hamburger*/
+/*button*/
+.hamburger {
+    margin: 0 20px 0 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: $nsa-bg-color;
+    width: 50px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .hamburger_elem1,
+    .hamburger_elem2,
+    .hamburger_elem3 {
+        background-color: $nsa-main-color;
+        height: 5px;
+        transition: .2s;
+    }
+
+    .hamburger_elem1 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transform: none;
+    }
+
+    .hamburger_elem2 {
+        position: absolute;
+        top: 17.5px;
+        width: 100%;
+    }
+
+    .hamburger_elem3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transform: none;
+    }
+
+    .hamburger_elem1_added {
+        transform: rotate(45deg) translateX(12px) translateY(13px);
+    }
+
+    .hamburger_elem2_added {
+        width: 0;
+    }
+
+    .hamburger_elem3_added {
+        transform: rotate(-45deg) translateX(12px) translateY(-13px);
+    }
+}
