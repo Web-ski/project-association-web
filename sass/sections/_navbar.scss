@@ -1,0 +1,50 @@
+.navbar {
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 90px;
+    z-index: 1;
+
+    .navbar-brand {
+        padding-left: 20px;
+
+        img {
+            height: 80px;
+        }
+    }
+
+    /*list*/
+    .nav_links {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: 0px;
+        background-color: $nsa-bg-color;
+        text-align: center;
+        overflow: hidden;
+        transition: .5s;
+
+        .row {
+            justify-content: center;
+            flex-direction: column;
+            margin: 10vh auto;
+
+            .box {
+                size: 20%;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $nsa-main-color;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .nav_links_added {
+        height: 80vh;
+    }
+}
