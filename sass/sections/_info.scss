@@ -1,0 +1,36 @@
+#info {
+    padding-bottom: 20px;
+    .row {
+        padding: 0 5%;
+
+        div {
+            padding-top: 20px;
+            color: $nsa-map-blue-color;
+
+            div {
+
+                img {
+                    width: 100px;
+                    padding: 10px;
+                }
+            }
+
+            div {
+                .h4 {
+                    font-weight: bold;
+                    color: $nsa-main-color;
+                }
+            }
+
+            /*&:first-of-type {
+                div {
+
+                    img {
+                        width: 100px;
+                        padding: 0px;
+                    }
+                }
+            }*/
+        }
+    }
+}

@@ -211,6 +211,38 @@ li {
   background-color: white;
 }
 
+#info {
+  padding-bottom: 20px;
+}
+
+#info .row {
+  padding: 0 5%;
+}
+
+#info .row div {
+  padding-top: 20px;
+  color: #204a87;
+  /*&:first-of-type {
+                div {
+
+                    img {
+                        width: 100px;
+                        padding: 0px;
+                    }
+                }
+            }*/
+}
+
+#info .row div div img {
+  width: 100px;
+  padding: 10px;
+}
+
+#info .row div div .h4 {
+  font-weight: bold;
+  color: #002d5f;
+}
+
 /* Pages / Views */
 body {
   margin: 0 auto;
