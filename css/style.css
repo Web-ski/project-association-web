@@ -315,6 +315,56 @@ li {
   font-weight: normal;
 }
 
+footer {
+  background-color: #303030;
+  color: white;
+  padding: 20px 0;
+}
+
+footer .container .row {
+  padding: 0 5%;
+}
+
+footer .container .row .col {
+  margin: 0;
+  position: relative;
+}
+
+footer .container .row .col ul li {
+  font-size: 14px;
+}
+
+footer .container .row .col img {
+  width: 60px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+footer .container .row:nth-of-type(2) {
+  border-top: solid 0.5px #bdced6;
+  padding-top: 20px;
+}
+
+footer .container .row:nth-of-type(2) .col p {
+  font-size: 14px;
+  color: white;
+}
+
+footer .container .row:nth-of-type(2) .col div {
+  font-size: 14px;
+  color: #bdced6;
+}
+
+footer .container .row:nth-of-type(2) .col div a {
+  font-size: 14px;
+  color: #bdced6;
+}
+
+footer .container .row:nth-of-type(2) .col div:nth-of-type(2) {
+  display: none;
+}
+
 /* Pages / Views */
 body {
   margin: 0 auto;
