@@ -164,8 +164,8 @@ li {
 
 .jumbotron {
   background-color: #00152c;
-  background-image: url(""), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
-  background-image: url(""), linear-gradient(to bottom, #004d5f, #00152c);
+  background-image: url("../../images/map-of-europe-equidistant-hi.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
+  background-image: url("../../images/map-of-europe-equidistant-hi.png"), linear-gradient(to bottom, #004d5f, #00152c);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
