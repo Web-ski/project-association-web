@@ -269,6 +269,52 @@ li {
   font-weight: bold;
 }
 
+#executive {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#executive .h4 {
+  font-weight: bold;
+  color: #002d5f;
+  padding: 10px 0;
+}
+
+#executive .row {
+  padding: 0 5%;
+}
+
+#executive .row div {
+  padding: 20px 0;
+}
+
+#executive .row div .circle {
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  text-align: center;
+  background-color: #303030;
+  background-position: center;
+}
+
+#executive .row div .circle img {
+  width: 150px;
+}
+
+#executive .row div div .h5 {
+  font-weight: bold;
+}
+
+#executive .row div div .h5:first-of-type {
+  color: #204a87;
+  font-weight: normal;
+}
+
 /* Pages / Views */
 body {
   margin: 0 auto;

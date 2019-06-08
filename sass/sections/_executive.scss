@@ -1,0 +1,48 @@
+#executive {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+    .h4 {
+        font-weight: bold;
+        color: $nsa-main-color;
+        padding: 10px 0;
+    }
+
+    .row {
+        padding: 0 5%;
+
+        div {
+            padding: 20px 0;            
+
+            .circle {
+                margin: 0 auto;
+                border-radius: 50%;
+                overflow: hidden;
+                width: 150px;
+                height: 150px;
+                padding: 0;
+                text-align: center;
+                background-color: $nsa-border-color;
+                background-position: center;
+                
+                img {
+                    width: 150px;                                        
+                }
+            }
+
+            div {
+
+                .h5 {
+                    font-weight: bold;
+
+                    &:first-of-type {
+                        color: $nsa-map-blue-color;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
