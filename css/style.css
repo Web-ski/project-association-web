@@ -243,6 +243,32 @@ li {
   color: #002d5f;
 }
 
+#description {
+  padding-bottom: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
+  background-image: linear-gradient(to bottom, #004d5f, #00152c);
+}
+
+#description .row {
+  padding: 0 5%;
+}
+
+#description .row div {
+  padding-top: 20px;
+}
+
+#description .row div div img {
+  width: 150px;
+}
+
+#description .row div div {
+  color: white;
+}
+
+#description .row div div .h4 {
+  font-weight: bold;
+}
+
 /* Pages / Views */
 body {
   margin: 0 auto;

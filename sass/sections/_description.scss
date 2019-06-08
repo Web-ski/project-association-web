@@ -1,0 +1,29 @@
+#description {
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+
+    .row {
+        padding: 0 5%;
+
+        div {
+            padding-top: 20px;
+
+            div {
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
+
+        div {
+            div {
+                color: $nsa-bg-color;
+
+                .h4 {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
