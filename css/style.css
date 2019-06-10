@@ -33,11 +33,192 @@ li {
 }
 
 /* Components */
-/*Button More*/
+/*Buttons More*/
 .btn-outline-light {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   border: transparent;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-outline-light:hover .pseudo:before, .btn-outline-light:hover .pseudo:after {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.btn-outline-light .pseudo {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.btn-outline-light .pseudo:before {
+  content: '';
+  display: block;
+  position: absolute;
+  padding: 0;
+  height: 12px;
+  width: 10%;
+  top: 33%;
+  z-index: -1;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  -webkit-animation: movingBgc1 2s ease-in-out 1s infinite, movingBgTrnsp1 2s linear 1s infinite;
+          animation: movingBgc1 2s ease-in-out 1s infinite, movingBgTrnsp1 2s linear 1s infinite;
+}
+
+@-webkit-keyframes movingBgc1 {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
+@keyframes movingBgc1 {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
+@-webkit-keyframes movingBgTrnsp1 {
+  0% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+  50% {
+    background-color: rgba(29, 29, 29, 0.3);
+  }
+  100% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+}
+
+@keyframes movingBgTrnsp1 {
+  0% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+  50% {
+    background-color: rgba(29, 29, 29, 0.3);
+  }
+  100% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+}
+
+.btn-outline-light .pseudo:after {
+  content: '';
+  display: block;
+  position: absolute;
+  padding: 0;
+  height: 12px;
+  width: 6%;
+  top: 33%;
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
+  -webkit-animation: movingBgc2 2s ease-in-out 1s infinite, movingBgTrnsp2 2s linear 1s infinite;
+          animation: movingBgc2 2s ease-in-out 1s infinite, movingBgTrnsp2 2s linear 1s infinite;
+}
+
+@-webkit-keyframes movingBgc2 {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
+@keyframes movingBgc2 {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
+@-webkit-keyframes movingBgTrnsp2 {
+  0% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+  50% {
+    background-color: rgba(29, 29, 29, 0.5);
+  }
+  100% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+}
+
+@keyframes movingBgTrnsp2 {
+  0% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+  50% {
+    background-color: rgba(29, 29, 29, 0.5);
+  }
+  100% {
+    background-color: rgba(29, 29, 29, 0);
+  }
+}
+
+.btn-outline-dark {
+  border: transparent;
+  color: #002d5f;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-outline-dark:hover {
+  background-color: transparent;
+  border: none;
+  color: #204a87;
+}
+
+.btn-outline-dark:hover:after {
+  content: '';
+  display: block;
+  border-bottom: solid 1px #204a87;
+  position: absolute;
+  -webkit-animation: movingBorder 2s ease-out infinite;
+          animation: movingBorder 2s ease-out infinite;
+}
+
+@-webkit-keyframes movingBorder {
+  0% {
+    left: 8%;
+    width: 78%;
+  }
+  50% {
+    left: 48%;
+    width: 5%;
+  }
+  100% {
+    left: 8%;
+    width: 78%;
+  }
+}
+
+@keyframes movingBorder {
+  0% {
+    left: 8%;
+    width: 78%;
+  }
+  50% {
+    left: 48%;
+    width: 5%;
+  }
+  100% {
+    left: 8%;
+    width: 78%;
+  }
 }
 
 /*Hamburger*/
