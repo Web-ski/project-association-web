@@ -2,6 +2,7 @@
 .btn-outline-light {
     background-color: transparent;
     border: transparent;
+
     text-transform: uppercase;
     position: relative;
     z-index: 1;
@@ -121,19 +122,19 @@
             animation: movingBorder 2s ease-out infinite;
 
             @keyframes movingBorder {
-                0% {
-                    left: 8%;
-                    width: 78%;
+                0% {left: 48%;
+                    width: 5%;
+                    
                 }
 
-                50% {
-                    left: 48%;
-                    width: 5%;
+                50% {left: 8%;
+                    width: 78%;
+                    
                 }
 
                 100% {
-                    left: 8%;
-                    width: 78%;
+                    left: 48%;
+                    width: 5%;
                 }
             }
         }
