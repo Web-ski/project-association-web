@@ -1,0 +1,36 @@
+.row {
+
+    div {
+
+        .circle {
+            margin: 0 auto;
+            padding: 0;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            background-color: $nsa-border-color;
+            background-position: center;
+
+
+            img {
+                width: 150px;
+                margin: 0 auto;
+                padding: 0;
+                transition: .6s;
+                opacity: .8;
+            }
+        }
+
+        &:hover {
+            .circle {
+                img {
+                    width: 155px;
+                    opacity: 1;
+
+                }
+            }
+        }
+    }
+}

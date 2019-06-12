@@ -285,6 +285,32 @@ li {
           transform: rotate(-45deg) translateX(12px) translateY(-13px);
 }
 
+.row div .circle {
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  background-color: #303030;
+  background-position: center;
+}
+
+.row div .circle img {
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+  opacity: .8;
+}
+
+.row div:hover .circle img {
+  width: 155px;
+  opacity: 1;
+}
+
 /* Sections */
 .navbar {
   height: 100px;
@@ -485,19 +511,7 @@ li {
 }
 
 #executive .row div .circle {
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 150px;
-  height: 150px;
   padding: 0;
-  text-align: center;
-  background-color: #303030;
-  background-position: center;
-}
-
-#executive .row div .circle img {
-  width: 150px;
 }
 
 #executive .row div div .h5 {

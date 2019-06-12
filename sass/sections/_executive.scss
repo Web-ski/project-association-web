@@ -14,22 +14,10 @@
         padding: 0 5%;
 
         div {
-            padding: 20px 0;            
-
+            padding: 20px 0;   
+            
             .circle {
-                margin: 0 auto;
-                border-radius: 50%;
-                overflow: hidden;
-                width: 150px;
-                height: 150px;
-                padding: 0;
-                text-align: center;
-                background-color: $nsa-border-color;
-                background-position: center;
-                
-                img {
-                    width: 150px;                                        
-                }
+                padding: 0;                
             }
 
             div {
