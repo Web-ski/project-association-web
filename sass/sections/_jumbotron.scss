@@ -10,9 +10,10 @@
     color: $nsa-bg-color;
     height: 80vh;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     display: flex;
+    padding: 10px;
 
     .row {        
         justify-content: center;
@@ -21,9 +22,20 @@
         .box {
             margin: 6% 10%;
 
+            &:first-of-type {
+                min-height: 150px;
+                background-image: url("../../images/atom.svg");
+                background-size: 150px;
+                background-repeat: no-repeat;
+                background-position: top;
+                line-height: 100%;
+            }
+
             h1 {
                 font-weight: normal;
-                font-size: 40px;
+                font-size: 45px;   
+                display: inline-block;
+                margin-top: 10%;             
             }
 
             .my-4 {
