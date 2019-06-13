@@ -457,7 +457,7 @@ li {
 
 .jumbotron .row .box:first-of-type {
   min-height: 150px;
-  background-image: url("../../images/atom.svg");
+  background-image: url("../../images/atom-seablue-col.png");
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: top;
@@ -469,6 +469,7 @@ li {
   font-size: 45px;
   display: inline-block;
   margin-top: 10%;
+  text-shadow: 0px 0px 10px #00152c;
 }
 
 .jumbotron .row .box .my-4 {
