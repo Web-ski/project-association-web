@@ -1,10 +1,11 @@
 .navbar {
     height: 100px;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     line-height: 90px;
-    z-index: 1;
+    z-index: 4;
 
     .navbar-brand {
         padding-left: 20px;
@@ -24,22 +25,55 @@
         background-color: $nsa-bg-color;
         text-align: center;
         overflow: hidden;
-        transition: .5s;
+        transition: .5s;        
 
         .row {
             justify-content: center;
             flex-direction: column;
-            margin: 10vh auto;
+            margin: 10vh auto;            
 
             .box {
-                size: 20%;
+                size: 20%;                
 
-                a {
-                    display: block;
+                .nav-item {
+                    display: inline-block;
                     text-decoration: none;
                     color: $nsa-main-color;
                     font-size: 20px;
                     text-transform: uppercase;
+                    margin: 0 auto;
+                    width: auto;
+                }
+
+                &:hover {
+                    
+                    .nav-item {
+                        color: $nsa-border-color;
+                        position: relative;                        
+                        
+                        &:after {
+                            content: '';
+                            display: block;
+                            border-bottom: solid 1px $nsa-border-color;
+                            position: absolute;
+                            bottom: 30%;
+                            animation: movingBorderA 1s ease-out;
+                            left: 4%;
+                                    width: 88%;
+
+                            @keyframes movingBorderA {
+                                0% {
+                                    left: 48%;
+                                    width: 5%;                                }
+
+
+                                100% {
+                                    left: 4%;
+                                    width: 88%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -47,5 +81,6 @@
 
     .nav_links_added {
         height: 80vh;
+
     }
 }

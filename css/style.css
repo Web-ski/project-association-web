@@ -33,6 +33,70 @@ li {
 }
 
 /* Components */
+/*Hamburger*/
+/*button*/
+.hamburger {
+  margin: 0 20px 0 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: white;
+  width: 50px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger .hamburger_elem1,
+.hamburger .hamburger_elem2,
+.hamburger .hamburger_elem3 {
+  background-color: #002d5f;
+  height: 5px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.hamburger .hamburger_elem1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.hamburger .hamburger_elem2 {
+  position: absolute;
+  top: 17.5px;
+  width: 100%;
+}
+
+.hamburger .hamburger_elem3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.hamburger .hamburger_elem1_added {
+  -webkit-transform: rotate(45deg) translateX(12px) translateY(13px);
+          transform: rotate(45deg) translateX(12px) translateY(13px);
+}
+
+.hamburger .hamburger_elem2_added {
+  width: 0;
+}
+
+.hamburger .hamburger_elem3_added {
+  -webkit-transform: rotate(-45deg) translateX(12px) translateY(-13px);
+          transform: rotate(-45deg) translateX(12px) translateY(-13px);
+}
+
 /*Buttons More*/
 .btn-outline-light {
   background-color: transparent;
@@ -179,13 +243,13 @@ li {
 .btn-outline-dark:hover {
   background-color: transparent;
   border: none;
-  color: #204a87;
+  color: #303030;
 }
 
 .btn-outline-dark:hover:after {
   content: '';
   display: block;
-  border-bottom: solid 1px #204a87;
+  border-bottom: solid 1px #303030;
   position: absolute;
   -webkit-animation: movingBorder 2s ease-out infinite;
           animation: movingBorder 2s ease-out infinite;
@@ -221,70 +285,6 @@ li {
   }
 }
 
-/*Hamburger*/
-/*button*/
-.hamburger {
-  margin: 0 20px 0 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: white;
-  width: 50px;
-  height: 40px;
-  position: relative;
-  overflow: hidden;
-  display: block;
-}
-
-.hamburger:hover {
-  cursor: pointer;
-}
-
-.hamburger .hamburger_elem1,
-.hamburger .hamburger_elem2,
-.hamburger .hamburger_elem3 {
-  background-color: #002d5f;
-  height: 5px;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.hamburger .hamburger_elem1 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  -webkit-transform: none;
-          transform: none;
-}
-
-.hamburger .hamburger_elem2 {
-  position: absolute;
-  top: 17.5px;
-  width: 100%;
-}
-
-.hamburger .hamburger_elem3 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  -webkit-transform: none;
-          transform: none;
-}
-
-.hamburger .hamburger_elem1_added {
-  -webkit-transform: rotate(45deg) translateX(12px) translateY(13px);
-          transform: rotate(45deg) translateX(12px) translateY(13px);
-}
-
-.hamburger .hamburger_elem2_added {
-  width: 0;
-}
-
-.hamburger .hamburger_elem3_added {
-  -webkit-transform: rotate(-45deg) translateX(12px) translateY(-13px);
-          transform: rotate(-45deg) translateX(12px) translateY(-13px);
-}
-
 .row div .circle {
   margin: 0 auto;
   padding: 0;
@@ -314,11 +314,12 @@ li {
 /* Sections */
 .navbar {
   height: 100px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   line-height: 90px;
-  z-index: 1;
+  z-index: 4;
   /*list*/
 }
 
@@ -358,12 +359,53 @@ li {
   size: 20%;
 }
 
-.navbar .nav_links .row .box a {
-  display: block;
+.navbar .nav_links .row .box .nav-item {
+  display: inline-block;
   text-decoration: none;
   color: #002d5f;
   font-size: 20px;
   text-transform: uppercase;
+  margin: 0 auto;
+  width: auto;
+}
+
+.navbar .nav_links .row .box:hover .nav-item {
+  color: #303030;
+  position: relative;
+}
+
+.navbar .nav_links .row .box:hover .nav-item:after {
+  content: '';
+  display: block;
+  border-bottom: solid 1px #303030;
+  position: absolute;
+  bottom: 30%;
+  -webkit-animation: movingBorderA 1s ease-out;
+          animation: movingBorderA 1s ease-out;
+  left: 4%;
+  width: 88%;
+}
+
+@-webkit-keyframes movingBorderA {
+  0% {
+    left: 48%;
+    width: 5%;
+  }
+  100% {
+    left: 4%;
+    width: 88%;
+  }
+}
+
+@keyframes movingBorderA {
+  0% {
+    left: 48%;
+    width: 5%;
+  }
+  100% {
+    left: 4%;
+    width: 88%;
+  }
 }
 
 .navbar .nav_links_added {
@@ -405,6 +447,8 @@ li {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .jumbotron .row .box {

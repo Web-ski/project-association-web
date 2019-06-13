@@ -1,13 +1,72 @@
+/*Hamburger*/
+/*button*/
+.hamburger {
+    margin: 0 20px 0 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: $nsa-bg-color;
+    width: 50px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .hamburger_elem1,
+    .hamburger_elem2,
+    .hamburger_elem3 {
+        background-color: $nsa-main-color;
+        height: 5px;
+        transition: .2s;
+    }
+
+    .hamburger_elem1 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transform: none;        
+    }
+
+    .hamburger_elem2 {
+        position: absolute;
+        top: 17.5px;
+        width: 100%;
+    }
+
+    .hamburger_elem3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transform: none;
+    }
+
+    .hamburger_elem1_added {
+        transform: rotate(45deg) translateX(12px) translateY(13px);
+    }
+
+    .hamburger_elem2_added {
+        width: 0;
+    }
+
+    .hamburger_elem3_added {
+        transform: rotate(-45deg) translateX(12px) translateY(-13px);
+    }
+}
+
 /*Buttons More*/
 .btn-outline-light {
     background-color: transparent;
     border: transparent;
-
     text-transform: uppercase;
     position: relative;
     z-index: 1;
 
-    &:hover {
+    &:hover {        
+
         .pseudo {
 
             &:before,
@@ -99,8 +158,7 @@
                 }
             }
         }
-    }
-
+    }  
 }
 
 .btn-outline-dark {
@@ -112,12 +170,12 @@
     &:hover {
         background-color: transparent;
         border: none;
-        color: $nsa-map-blue-color;
+        color: $nsa-border-color;
 
         &:after {
             content: '';
             display: block;
-            border-bottom: solid 1px $nsa-map-blue-color;
+            border-bottom: solid 1px $nsa-border-color;
             position: absolute;
             animation: movingBorder 2s ease-out infinite;
 
@@ -138,65 +196,5 @@
                 }
             }
         }
-    }
-}
-
-
-/*Hamburger*/
-/*button*/
-.hamburger {
-    margin: 0 20px 0 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    background-color: $nsa-bg-color;
-    width: 50px;
-    height: 40px;
-    position: relative;
-    overflow: hidden;
-    display: block;
-
-    &:hover {
-        cursor: pointer;
-    }
-
-    .hamburger_elem1,
-    .hamburger_elem2,
-    .hamburger_elem3 {
-        background-color: $nsa-main-color;
-        height: 5px;
-        transition: .2s;
-    }
-
-    .hamburger_elem1 {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        transform: none;
-    }
-
-    .hamburger_elem2 {
-        position: absolute;
-        top: 17.5px;
-        width: 100%;
-    }
-
-    .hamburger_elem3 {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        transform: none;
-    }
-
-    .hamburger_elem1_added {
-        transform: rotate(45deg) translateX(12px) translateY(13px);
-    }
-
-    .hamburger_elem2_added {
-        width: 0;
-    }
-
-    .hamburger_elem3_added {
-        transform: rotate(-45deg) translateX(12px) translateY(-13px);
     }
 }
