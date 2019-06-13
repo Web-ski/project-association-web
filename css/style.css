@@ -545,7 +545,7 @@ footer .container .row .col ul li {
 footer .container .row .col img {
   width: 60px;
   position: absolute;
-  right: 0;
+  right: 5%;
   top: 10px;
 }
 
