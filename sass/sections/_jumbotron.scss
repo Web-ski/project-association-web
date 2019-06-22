@@ -15,14 +15,25 @@
     display: flex;
     padding: 10px;
 
-    .row {        
+    @media only screen and (orientation: landscape) {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+
+
+    .row {
         justify-content: center;
         align-items: stretch;
         width: 100%;
         margin: 0 auto;
-        
+
         .box {
             margin: 6% 10%;
+
+            @media only screen and (orientation: landscape) {
+                margin: 1% 1%;
+            }
 
             &:first-of-type {
                 min-height: 150px;
@@ -31,15 +42,39 @@
                 background-repeat: no-repeat;
                 background-position: top;
                 line-height: 100%;
+
+                @media only screen and (orientation: landscape) {
+                    background-size: 80px;
+                    min-height: 80px;
+                    background-image: url("../../images/atom-blue-green-col.png");
+                }
+
+                @media only screen and (orientation: landscape) and (max-height: 600px) {
+                    min-height: 78px;
+                    background-size: 68px;
+                }
             }
 
             h1 {
                 font-weight: normal;
-                font-size: 45px;   
+                font-size: 45px;
                 display: inline-block;
-                margin-top: 10%;       
-                text-shadow: 0px 0px 10px $nsa-bg-dark-color;      
+                margin-top: 10%;
+                text-shadow: 0px 0px 10px $nsa-bg-dark-color;
+
+                @media only screen and (orientation: landscape) {
+                    font-size: 40px;
+                    margin: 10px 0;
+                    line-height: 60px;
+                }
+
+                @media only screen and (orientation: landscape) and (max-height: 600px) {
+                    font-size: 38px;
+                    margin: 10px 0;
+                    line-height: 46px;
+                }
             }
+
 
             .my-4 {
                 background-color: $nsa-bg-color;

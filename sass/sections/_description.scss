@@ -2,23 +2,53 @@
     padding-bottom: 20px;
     background-image: linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
 
+    @media only screen and (orientation: landscape) {
+        width: 100%;
+        max-width: 1200px;
+    }
+
     .row {
         padding: 0 5%;
 
         div {
-            padding-top: 20px;
+            padding-top: 20px;            
 
             div {
 
                 img {
                     width: 150px;
+
+                    @media only screen and (orientation: landscape) and (max-height: 320px) {
+                        width: 80px;
+                        padding-top: 20px;
+                    }
+                
+                }
+            }
+
+            &:first-of-type {
+                @media only screen and (orientation: landscape) {
+                    padding-top: 0;
                 }
             }
         }
 
         div {
+
             div {
                 color: $nsa-bg-color;
+
+                p.h4 {
+                    @media only screen and (orientation: landscape) {
+                        padding-top: 20px;
+                    }
+
+                    @media only screen and (orientation: landscape) and (max-height: 320px) {
+                        padding-top: 0px;
+                    }
+
+                }
+
 
                 .h4 {
                     font-weight: bold;

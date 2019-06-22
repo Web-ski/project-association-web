@@ -208,14 +208,15 @@
     z-index: 99;
     font-size: 18px;
     font-weight: bold;
-    border: solid 2px $nsa-bg-color;
-    text-shadow: 0px 0px 6px $nsa-border-color;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 0px 4px $nsa-border-color;
     outline: none;
-    background-color: rgba(48, 48, 48, 0.3);
+    background-color: rgba(48, 48, 48, 0.1);
     box-shadow: 0px 0px 5px $nsa-border-color;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     padding: 15px;
+    transition: .2s;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -224,5 +225,23 @@
 
     &:hover {
         background-color: $nsa-border-color;
+        color: $nsa-bg-color;
+        border-color: $nsa-bg-color;
+    }
+
+    @media only screen and (max-width: 330px) {
+        left: 40%;
+    }
+
+    @media only screen and (orientation: landscape) {
+        left: 45.5%;
+    }
+
+    @media only screen and (orientation: landscape) and (max-height: 600px) {
+        left: 44%;
+    }
+
+    @media only screen and (orientation: landscape) and (max-height: 640px) {
+        left: 45%;
     }
 }

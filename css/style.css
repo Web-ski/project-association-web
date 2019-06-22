@@ -293,15 +293,17 @@ li {
   z-index: 99;
   font-size: 18px;
   font-weight: bold;
-  border: solid 2px white;
-  text-shadow: 0px 0px 6px #303030;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 0px 4px #303030;
   outline: none;
-  background-color: rgba(48, 48, 48, 0.3);
+  background-color: rgba(48, 48, 48, 0.1);
   -webkit-box-shadow: 0px 0px 5px #303030;
           box-shadow: 0px 0px 5px #303030;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   padding: 15px;
+  -webkit-transition: .2s;
+  transition: .2s;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -311,6 +313,32 @@ li {
 
 .back-top:hover {
   background-color: #303030;
+  color: white;
+  border-color: white;
+}
+
+@media only screen and (max-width: 330px) {
+  .back-top {
+    left: 40%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .back-top {
+    left: 45.5%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .back-top {
+    left: 44%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 640px) {
+  .back-top {
+    left: 45%;
+  }
 }
 
 .row div .circle {
@@ -348,7 +376,22 @@ li {
   padding: 0;
   line-height: 90px;
   z-index: 4;
+  position: relative;
   /*list*/
+}
+
+@media only screen and (orientation: landscape) {
+  .navbar {
+    height: 90px;
+    line-height: 80px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .navbar {
+    height: 80px;
+    line-height: 70px;
+  }
 }
 
 .navbar .navbar-brand {
@@ -381,6 +424,12 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10vh auto;
+}
+
+@media only screen and (max-height: 600px) {
+  .navbar .nav_links .row {
+    margin-top: 2vh;
+  }
 }
 
 .navbar .nav_links .row .box {
@@ -468,6 +517,13 @@ li {
   padding: 10px;
 }
 
+@media only screen and (orientation: landscape) {
+  .jumbotron {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
 .jumbotron .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -483,6 +539,12 @@ li {
   margin: 6% 10%;
 }
 
+@media only screen and (orientation: landscape) {
+  .jumbotron .row .box {
+    margin: 1% 1%;
+  }
+}
+
 .jumbotron .row .box:first-of-type {
   min-height: 150px;
   background-image: url("../../images/atom-seablue-col.png");
@@ -492,12 +554,43 @@ li {
   line-height: 100%;
 }
 
+@media only screen and (orientation: landscape) {
+  .jumbotron .row .box:first-of-type {
+    background-size: 80px;
+    min-height: 80px;
+    background-image: url("../../images/atom-blue-green-col.png");
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .jumbotron .row .box:first-of-type {
+    min-height: 78px;
+    background-size: 68px;
+  }
+}
+
 .jumbotron .row .box h1 {
   font-weight: normal;
   font-size: 45px;
   display: inline-block;
   margin-top: 10%;
   text-shadow: 0px 0px 10px #00152c;
+}
+
+@media only screen and (orientation: landscape) {
+  .jumbotron .row .box h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .jumbotron .row .box h1 {
+    font-size: 38px;
+    margin: 10px 0;
+    line-height: 46px;
+  }
 }
 
 .jumbotron .row .box .my-4 {
@@ -542,6 +635,13 @@ li {
   background-image: linear-gradient(to bottom, #004d5f, #00152c);
 }
 
+@media only screen and (orientation: landscape) {
+  #description {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
 #description .row {
   padding: 0 5%;
 }
@@ -554,8 +654,33 @@ li {
   width: 150px;
 }
 
+@media only screen and (orientation: landscape) and (max-height: 320px) {
+  #description .row div div img {
+    width: 80px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #description .row div:first-of-type {
+    padding-top: 0;
+  }
+}
+
 #description .row div div {
   color: white;
+}
+
+@media only screen and (orientation: landscape) {
+  #description .row div div p.h4 {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 320px) {
+  #description .row div div p.h4 {
+    padding-top: 0px;
+  }
 }
 
 #description .row div div .h4 {

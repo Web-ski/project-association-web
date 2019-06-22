@@ -6,6 +6,17 @@
     padding: 0;
     line-height: 90px;
     z-index: 4;
+    position: relative;
+
+    @media only screen and (orientation: landscape) {
+        height: 90px;
+        line-height: 80px;
+    }
+
+    @media only screen and (orientation: landscape) and (max-height: 600px) {
+        height: 80px;
+        line-height: 70px;
+    }
 
     .navbar-brand {
         padding-left: 20px;
@@ -25,15 +36,19 @@
         background-color: $nsa-bg-color;
         text-align: center;
         overflow: hidden;
-        transition: .5s;        
+        transition: .5s;
 
         .row {
             justify-content: center;
             flex-direction: column;
-            margin: 10vh auto;            
+            margin: 10vh auto;
+
+            @media only screen and (max-height: 600px) {
+                margin-top: 2vh;
+            }
 
             .box {
-                size: 20%;                
+                size: 20%;
 
                 .nav-item {
                     display: inline-block;
@@ -46,11 +61,11 @@
                 }
 
                 &:hover {
-                    
+
                     .nav-item {
                         color: $nsa-border-color;
-                        position: relative;                        
-                        
+                        position: relative;
+
                         &:after {
                             content: '';
                             display: block;
@@ -59,12 +74,13 @@
                             bottom: 30%;
                             animation: movingBorderA 1s ease-out;
                             left: 4%;
-                                    width: 88%;
+                            width: 88%;
 
                             @keyframes movingBorderA {
                                 0% {
                                     left: 48%;
-                                    width: 5%;                                }
+                                    width: 5%;
+                                }
 
 
                                 100% {
@@ -81,6 +97,5 @@
 
     .nav_links_added {
         height: 80vh;
-
     }
 }
