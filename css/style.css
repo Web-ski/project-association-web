@@ -717,8 +717,23 @@ footer {
   padding: 20px 0;
 }
 
+footer .container {
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+  display: block;
+}
+
 footer .container .row {
-  padding: 0 5%;
+  width: 100%;
+  margin: 0;
+  padding: 0 1%;
+}
+
+@media only screen and (orientation: landscape) {
+  footer .container .row {
+    padding: 0 10%;
+  }
 }
 
 footer .container .row .col {
