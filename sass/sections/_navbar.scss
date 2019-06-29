@@ -48,7 +48,11 @@
             }
 
             .box {
-                size: 20%;
+                height: 20%;
+
+                @media only screen and (orientation: landscape) {
+                    height: 15vh;
+                }
 
                 .nav-item {
                     display: inline-block;
@@ -57,7 +61,7 @@
                     font-size: 20px;
                     text-transform: uppercase;
                     margin: 0 auto;
-                    width: auto;
+                    width: auto;                    
                 }
 
                 &:hover {

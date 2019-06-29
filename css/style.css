@@ -419,7 +419,13 @@ li {
 }
 
 .navbar .nav_links .row .box {
-  size: 20%;
+  height: 20%;
+}
+
+@media only screen and (orientation: landscape) {
+  .navbar .nav_links .row .box {
+    height: 15vh;
+  }
 }
 
 .navbar .nav_links .row .box .nav-item {
