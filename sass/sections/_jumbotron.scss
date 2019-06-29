@@ -20,7 +20,11 @@
         max-width: 1200px;
     }
 
-
+    @media (min-width: 576px) and (max-width: 1199px) {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 1200px;
+    }
 
     .row {
         justify-content: center;
