@@ -3,19 +3,36 @@ footer {
     color: $nsa-text-light-color;
     padding: 20px 0;
 
+
+
     .container {
         padding: 0;
         max-width: 100%;
         margin: 0;
-        display: block;      
+        display: block;
+        position: relative;
+
+        @media (min-width: 992px) {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
         .row {
             width: 100%;
             margin: 0;
             padding: 0 1%;
-            
+
             @media only screen and (orientation: landscape) {
                 padding: 0 10%;
+            }
+
+            @media (min-width: 768px) {
+                padding: 0 10%;
+            }
+
+
+            @media (min-width: 1024px) {
+                padding: 0 5%;
             }
 
             .col {
@@ -33,6 +50,16 @@ footer {
                     position: absolute;
                     right: 5%;
                     top: 10px;
+
+                    @media (min-width: 1024px) {
+                        left: 40%;
+                        transform: translateX(-50%);
+                    }
+
+                    @media (min-width: 1140px) {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
                 }
             }
 
@@ -58,6 +85,21 @@ footer {
 
                         &:nth-of-type(2) {
                             display: none;
+                        }
+                    }
+                }
+
+                @media (min-width: 1024px) {
+                    border-top: none;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    .col {
+
+                        p,
+                        div {                            
+                            text-align: right;
                         }
                     }
                 }

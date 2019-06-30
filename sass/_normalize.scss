@@ -24,3 +24,15 @@ h1 {
 li {
     list-style: none;
 }
+
+p.h4 {
+    @media (min-width: 992px) {
+        font-size: 30px;
+    }
+}
+
+p {
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
+}

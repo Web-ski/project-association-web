@@ -32,6 +32,18 @@ li {
   list-style: none;
 }
 
+@media (min-width: 992px) {
+  p.h4 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 18px;
+  }
+}
+
 /* Components */
 /*Hamburger*/
 /*button*/
@@ -545,6 +557,24 @@ li {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .jumbotron .row .box {
+    margin: 6% 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron .row .box {
+    margin: 3% 15%;
+  }
+}
+
+@media (min-width: 927px) {
+  .jumbotron .row .box {
+    margin: 2% 12%;
+  }
+}
+
 .jumbotron .row .box:first-of-type {
   min-height: 150px;
   background-image: url("../../images/atom-seablue-col.png");
@@ -568,11 +598,44 @@ li {
   }
 }
 
+@media (min-width: 576px) {
+  .jumbotron .row .box:first-of-type {
+    background-image: url("../../images/atom-blue-green-col.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron .row .box:first-of-type {
+    background-size: 150px;
+  }
+}
+
+@media (min-width: 927px) {
+  .jumbotron .row .box:first-of-type {
+    height: 150px;
+    margin: 0% 5% 5%;
+  }
+}
+
+@media (min-width: 930px) {
+  .jumbotron .row .box:first-of-type {
+    margin: 5% 5% 2%;
+  }
+}
+
 .jumbotron .row .box img {
   display: inline-block;
   height: 45px;
   line-height: 66px;
   margin: 0 5px 5px;
+}
+
+@media (min-width: 930px) {
+  .jumbotron .row .box img {
+    height: 50px;
+    line-height: 71px;
+    margin: 0 5px 10px;
+  }
 }
 
 .jumbotron .row .box h1 {
@@ -599,6 +662,36 @@ li {
   }
 }
 
+@media (min-width: 576px) {
+  .jumbotron .row .box h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron .row .box h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 927px) {
+  .jumbotron .row .box h1 {
+    line-height: 120px;
+  }
+}
+
+@media (min-width: 576px) {
+  .jumbotron .row .box p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 930px) {
+  .jumbotron .row .box p {
+    padding-top: 50px;
+  }
+}
+
 .jumbotron .row .box .my-4 {
   background-color: white;
 }
@@ -609,6 +702,12 @@ li {
 
 #info .row {
   padding: 0 5%;
+}
+
+@media (min-width: 768px) {
+  #info .row {
+    padding: 0 1%;
+  }
 }
 
 #info .row div {
@@ -623,6 +722,12 @@ li {
                     }
                 }
             }*/
+}
+
+@media (min-width: 992px) {
+  #info .row div {
+    padding: 20px 20px;
+  }
 }
 
 #info .row div div img {
@@ -724,6 +829,12 @@ li {
   padding: 0 5%;
 }
 
+@media (min-width: 768px) {
+  #executive .row {
+    padding: 0 1%;
+  }
+}
+
 #executive .row div {
   padding: 20px 0;
 }
@@ -752,6 +863,14 @@ footer .container {
   max-width: 100%;
   margin: 0;
   display: block;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 footer .container .row {
@@ -763,6 +882,18 @@ footer .container .row {
 @media only screen and (orientation: landscape) {
   footer .container .row {
     padding: 0 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .container .row {
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .container .row {
+    padding: 0 5%;
   }
 }
 
@@ -780,6 +911,22 @@ footer .container .row .col img {
   position: absolute;
   right: 5%;
   top: 10px;
+}
+
+@media (min-width: 1024px) {
+  footer .container .row .col img {
+    left: 40%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 1140px) {
+  footer .container .row .col img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 footer .container .row:nth-of-type(2) {
@@ -804,6 +951,19 @@ footer .container .row:nth-of-type(2) .col div a {
 
 footer .container .row:nth-of-type(2) .col div:nth-of-type(2) {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  footer .container .row:nth-of-type(2) {
+    border-top: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  footer .container .row:nth-of-type(2) .col p,
+  footer .container .row:nth-of-type(2) .col div {
+    text-align: right;
+  }
 }
 
 /* Pages / Views */

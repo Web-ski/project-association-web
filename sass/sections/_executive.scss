@@ -13,6 +13,10 @@
     .row {
         padding: 0 5%;
 
+        @media (min-width: 768px) {
+            padding: 0 1%;
+        }
+
         div {
             padding: 20px 0;   
             
