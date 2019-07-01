@@ -8,6 +8,10 @@
         font-weight: bold;
         color: $nsa-main-color;
         padding: 10px 0;
+
+        @media (min-width: 768px) {
+            padding: 10px 0 30px;
+        }
     }
 
     .row {

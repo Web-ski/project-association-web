@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext');
 
 html {
     scroll-behavior: smooth;
@@ -9,7 +9,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -18,7 +18,8 @@ a {
 }
 
 h1 {
-    font-family: $nsa-title-font;    
+    //font-family: $nsa-title-font;    
+    font-weight: 900;
 }
 
 li {

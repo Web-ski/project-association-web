@@ -2,17 +2,13 @@
     background-color: $nsa-bg-dark-color;
     background-image: url("../../images/map-of-europe-equidistant-hi.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+    background-position: bottom right;
+    background-size: contain;
     border-radius: 0%;
     text-align: center;
     position: relative;
     color: $nsa-bg-color;
     height: 80vh;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
-    display: flex;
     padding: 10px;
 
     @media only screen and (orientation: landscape) {
@@ -26,14 +22,25 @@
         max-width: 1200px;
     }
 
+    @media (min-width: 992px) {
+        background-image: url("../../images/map-of-europe-equidistant-hi.png"), url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+        background-position: bottom right, left, left;
+        background-size: contain, 25%, 35%;
+        //height: 150px;
+    }
+
     .row {
+        padding: 10% 5%;
+        display: flex;
         justify-content: center;
-        align-items: stretch;
+        align-items: center;
         width: 100%;
+        height: 100%;
         margin: 0 auto;
 
         .box {
             margin: 6% 10%;
+            height: 10%;
 
             @media only screen and (orientation: landscape) {
                 margin: 1% 1%;
@@ -45,10 +52,7 @@
 
             @media (min-width: 768px) {
                 margin: 3% 15%;
-            }
-
-            @media (min-width: 927px) {
-                margin: 2% 12%;
+                //height: 150px;
             }
 
             &:first-of-type {
@@ -62,7 +66,7 @@
                 @media only screen and (orientation: landscape) {
                     background-size: 80px;
                     min-height: 80px;
-                    
+
                 }
 
                 @media only screen and (orientation: landscape) and (max-height: 600px) {
@@ -70,86 +74,128 @@
                     background-size: 68px;
                 }
 
-                @media (min-width: 576px) {                    
-                    background-image: url("../../images/atom-blue-green-col.png");
-                }
-
-                @media (min-width: 768px) {
+                @media (min-width: 576px) {
+                    //background-image: url("../../images/atom-blue-green-col.png");
                     background-size: 150px;
+                    min-height: 150px;
+                    line-height: 160px;
                 }
 
-                @media (min-width: 927px) {
-                    height: 150px;
-                    margin: 0% 5% 5%;
+                @media (min-width: 992px) {                    
+                    line-height: 170px;
                 }
 
-                @media (min-width: 930px) {                    
-                    margin: 5% 5% 2%;
+                img {
+                    display: inline-block;
+                    height: 45px;
+                    line-height: 66px;
+                    margin: 0 5px 5px;
+
+                    @media (min-width: 768px) {                    
+                        margin: 0 5px 10px;
+                    }
+                }
+
+                h1 {
+                    //font-weight: normal;
+                    font-size: 45px;
+                    display: inline-block;
+                    margin-top: 10%;
+                    text-shadow: 0px 0px 10px $nsa-bg-dark-color;
+
+
+                    @media only screen and (orientation: landscape) {
+                        font-size: 40px;
+                        margin: 10px 0;
+                        line-height: 60px;
+                    }
+
+                    @media only screen and (orientation: landscape) and (max-height: 600px) {
+                        font-size: 38px;
+                        margin: 10px 0;
+                        line-height: 46px;
+                    }
+
+                    @media (min-width: 576px) {
+                        font-size: 50px;
+                    }
+
+                    @media (min-width: 768px) {
+                        font-size: 55px;                        
+                    }
+
+                    @media (min-width: 992px) {
+                        font-size: 60px;                        
+                    }
+                }
+
+                .my-4 {
+                    background-color: $nsa-bg-color;
                 }
             }
 
-            img {
-                display: inline-block;
-                height: 45px;
-                line-height: 66px;
-                margin: 0 5px 5px;
-
-                @media (min-width: 930px) {                    
-                    height: 50px;
-                line-height: 71px;
-                margin: 0 5px 10px;
-                }
-            }
-
-
-            h1 {
-                font-weight: normal;
-                font-size: 45px;
-                display: inline-block;
-                margin-top: 10%;
-                text-shadow: 0px 0px 10px $nsa-bg-dark-color;
-
-
-                @media only screen and (orientation: landscape) {
-                    font-size: 40px;
-                    margin: 10px 0;
-                    line-height: 60px;
-                }
-
-                @media only screen and (orientation: landscape) and (max-height: 600px) {
-                    font-size: 38px;
-                    margin: 10px 0;
-                    line-height: 46px;
-                }
+            &:nth-of-type(2) {
 
                 @media (min-width: 576px) {
-                    font-size: 50px;
+                    min-height: 150px;
                 }
 
+                @media (min-width: 992px) {
+                    padding-top: 30px;
+                    width: 230px;
+                    margin-right: 20px;
+
+                    p {
+                        text-align: right;
+                    }
+                }
+
+                p {
+                    @media (min-width: 576px) {
+                        font-size: 18px;
+                    }
+
+                    @media (min-width: 768px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                display: none;
+
+                @media (min-width: 992px) {
+                    margin-left: 0;
+                    margin-right: 40px;
+                    display: flex;
+
+                    div {
+                        width: 100px;
+                        height: 100px;
+                        background-image: url('../../images/academic-slider.png');
+                        background-size: 100px;
+                        background-repeat: no-repeat;
+                        background-position: top;
+                        animation: movingIcons 10s steps(3) infinite;
+
+                        @keyframes movingIcons {
+                            0% {
+                                background-position: 0 0;
+                            }
+
+                            100% {
+                                background-position: 0 -350px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
                 @media (min-width: 768px) {
-                    font-size: 55px;
+                    padding-top: 75px;
+                    min-height: 150px;
                 }
-
-                @media (min-width: 927px) {
-                    line-height: 120px;                    
-                }
-
-            }
-
-            p {
-                @media (min-width: 576px) {
-                    font-size: 20px;
-                }
-
-                @media (min-width: 930px) {                    
-                    padding-top: 50px;
-                }
-
-            }
-
-
-            .my-4 {
-                background-color: $nsa-bg-color;
             }
         }
     }

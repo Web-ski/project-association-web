@@ -65,6 +65,11 @@
     position: relative;
     z-index: 1;
 
+    @media (min-width: 992px) {
+        border: solid 1px $nsa-contrast-color;
+        border-radius: 0;
+    }
+
     &:hover {
         background-color: $nsa-contrast-color;
         .pseudo {
