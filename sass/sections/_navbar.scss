@@ -61,7 +61,7 @@
                     font-size: 20px;
                     text-transform: uppercase;
                     margin: 0 auto;
-                    width: auto;                    
+                    width: auto;
                 }
 
                 &:hover {
@@ -93,6 +93,30 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
+            height: 80px;
+            line-height: 80px;
+            width: 80%;
+            
+            .row {
+                flex-direction: row;
+                height: 80px;
+                margin: 0;
+                
+                .box {
+                    height: 100%;
+                    padding: 0 3%;
+                    min-width: 100px;
+
+                    .nav-item {
+                        padding: 0;
+                        //min-width: 167px;
+                        font-size: 18px;
                     }
                 }
             }
