@@ -3,18 +3,25 @@ body {
 
     header {
         width: 100%;   
+        max-width: 1200px;
         margin: 0 auto;            
         background-color: $nsa-bg-color;
 
     }
+main {
 
-    /*sections*/
+    width: 100%;   
+        max-width: 1200px;
+        margin: 0 auto;  
     section {
 
         @media (min-width: 576px) {
             margin-bottom: 40px;
         }
-    }    
+    } 
+}
+    /*sections*/
+       
 
     /*footer*/    
 }

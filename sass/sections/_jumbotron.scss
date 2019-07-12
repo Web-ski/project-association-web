@@ -9,11 +9,13 @@
     position: relative;
     color: $nsa-bg-color;
     height: 80vh;
-    padding: 10px;
+    padding: 10px;    
 
     @media only screen and (orientation: landscape) {
         width: 100%;
         max-width: 1200px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     @media (min-width: 576px) and (max-width: 1199px) {
@@ -38,7 +40,8 @@
         height: 100%;
         margin: 0 auto;
         position: relative;
-       // flex-wrap: wrap;
+        flex-direction: column;
+        // flex-wrap: wrap;
 
         @media only screen and (orientation: portrait) {
             //flex-wrap: nowrap;
@@ -53,11 +56,11 @@
 
             @media only screen and (orientation: portrait) {
                 //flex-wrap: nowrap;
-                       }
+            }
 
             &:first-of-type {
                 background-image: url("../../images/atom-seablue-col.png");
-                background-size: 120px;
+                background-size: 15vh;
                 background-repeat: no-repeat;
                 background-position: center;
                 line-height: 100%;
@@ -65,11 +68,11 @@
                 @media only screen and (orientation: portrait) {
                     flex: 2;
                     padding: 0 8%;
-                           }
+                }
 
                 img {
                     display: inline-block;
-                    height: 45px;
+                    height: 5vw;
                     line-height: 66px;
                     margin: 0 5px 5px;
 
@@ -77,15 +80,15 @@
                         height: 5vh;
                     }
                 }
-                
+
                 .jumbotron__title {
                     display: inline-block;
                     text-shadow: 0px 0px 10px $nsa-bg-dark-color;
+                    font-size: 5vw;
 
                     @media only screen and (orientation: portrait) {
                         font-size: 6vh;
                     }
-
                 }
 
                 .my-4 {
@@ -95,9 +98,12 @@
 
             &:nth-of-type(2) {
 
+
                 .jumbotron__text {
+                    font-size: 4.5vh;
+
                     @media only screen and (orientation: portrait) {
-                        font-size: 3vh;
+                        font-size: 2.5vh;
                     }
 
                     @media (min-width: 992px) {
