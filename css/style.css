@@ -575,7 +575,7 @@ li {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px), (min-aspect-ratio: 4 / 3) {
   .jumbotron {
     background-image: url("../../images/map-of-europe-equidistant-hi.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
     background-image: url("../../images/map-of-europe-equidistant-hi.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), linear-gradient(to bottom, #004d5f, #00152c);
@@ -614,6 +614,12 @@ li {
   }
 }
 
+@media (min-aspect-ratio: 16 / 8) {
+  .jumbotron .row {
+    padding: 2%;
+  }
+}
+
 .jumbotron .row .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,6 +649,23 @@ li {
   }
 }
 
+@media (min-width: 992px) {
+  .jumbotron .row .box:first-of-type {
+    height: 15vh;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 8) {
+  .jumbotron .row .box:first-of-type {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 .jumbotron .row .box:first-of-type img {
   display: inline-block;
   height: 5vw;
@@ -653,6 +676,12 @@ li {
 @media only screen and (orientation: portrait) {
   .jumbotron .row .box:first-of-type img {
     height: 5vh;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 8) {
+  .jumbotron .row .box:first-of-type img {
+    height: 40px;
   }
 }
 
@@ -668,12 +697,37 @@ li {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .jumbotron .row .box:first-of-type .jumbotron__title {
+    font-size: 66px;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 8) {
+  .jumbotron .row .box:first-of-type .jumbotron__title {
+    font-size: calc(38px + 2vh);
+  }
+}
+
 .jumbotron .row .box:first-of-type .my-4 {
   background-color: white;
 }
 
+.jumbotron .row .box:nth-of-type(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 992px) {
+  .jumbotron .row .box:nth-of-type(2) {
+    max-width: 700px;
+  }
+}
+
 .jumbotron .row .box:nth-of-type(2) .jumbotron__text {
-  font-size: 4.5vh;
+  font-size: 3vw;
+  color: #bdced6;
 }
 
 @media only screen and (orientation: portrait) {
@@ -684,7 +738,14 @@ li {
 
 @media (min-width: 992px) {
   .jumbotron .row .box:nth-of-type(2) .jumbotron__text {
-    text-align: right;
+    font-size: 3vh;
+    text-align: center;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 8) {
+  .jumbotron .row .box:nth-of-type(2) .jumbotron__text {
+    font-size: calc(16px + 1vh);
   }
 }
 
@@ -692,17 +753,19 @@ li {
   display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (min-height: 768px) {
   .jumbotron .row .box:nth-of-type(3) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .jumbotron .row .box:nth-of-type(3) div {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-image: url("../../images/academic-slider.png");
-    background-size: 100px;
+    background-size: 90px;
     background-repeat: no-repeat;
     background-position: top;
     -webkit-animation: movingIcons 12s steps(3) infinite;
@@ -713,7 +776,7 @@ li {
       background-position: 0 0;
     }
     100% {
-      background-position: 0 -350px;
+      background-position: 0 -320px;
     }
   }
   @keyframes movingIcons {
@@ -721,7 +784,7 @@ li {
       background-position: 0 0;
     }
     100% {
-      background-position: 0 -350px;
+      background-position: 0 -320px;
     }
   }
 }
@@ -729,6 +792,12 @@ li {
 @media (min-width: 768px) {
   .jumbotron .row .box:nth-of-type(4) {
     min-height: 150px;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 8) {
+  .jumbotron .row .box:nth-of-type(4) {
+    min-height: 50px;
   }
 }
 
@@ -804,7 +873,9 @@ li {
 }
 
 #description .row {
+  width: 100%;
   padding: 0 5%;
+  margin: 0;
 }
 
 #description .row div {
@@ -1022,7 +1093,6 @@ body {
 }
 
 body header {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   background-color: white;

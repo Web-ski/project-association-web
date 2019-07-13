@@ -24,7 +24,7 @@
         max-width: 1200px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 992px), (min-aspect-ratio: 4/3) {
         background-image: url("../../images/map-of-europe-equidistant-hi.png"), url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
         background-position: bottom right, left, left;
         background-size: contain, 25%, 35%;
@@ -46,6 +46,10 @@
         @media only screen and (orientation: portrait) {
             //flex-wrap: nowrap;
             flex-direction: column;
+        }
+
+        @media (min-aspect-ratio: 16/8) {
+            padding: 2%;
         }
 
         .box {
@@ -70,6 +74,15 @@
                     padding: 0 8%;
                 }
 
+                @media (min-width: 992px) {
+                    height: 15vh;
+                    flex: 2;
+                }
+
+                @media (min-aspect-ratio: 16/8) {
+                    flex: 1;
+                }
+
                 img {
                     display: inline-block;
                     height: 5vw;
@@ -78,6 +91,10 @@
 
                     @media only screen and (orientation: portrait) {
                         height: 5vh;
+                    }
+
+                    @media (min-aspect-ratio: 16/8) {
+                        height: 40px;
                     }
                 }
 
@@ -89,6 +106,14 @@
                     @media only screen and (orientation: portrait) {
                         font-size: 6vh;
                     }
+
+                    @media only screen and (min-width: 1200px) {
+                        font-size: 66px;
+                    }   
+                    
+                    @media (min-aspect-ratio: 16/8) {
+                        font-size: calc(38px + 2vh);
+                    }
                 }
 
                 .my-4 {
@@ -97,18 +122,27 @@
             }
 
             &:nth-of-type(2) {
+                align-self: center;
 
+                @media (min-width: 992px) {
+                    max-width: 700px;
+                }
 
                 .jumbotron__text {
-                    font-size: 4.5vh;
+                    font-size: 3vw;
+                    color: $nsa-text-dark-color;
 
                     @media only screen and (orientation: portrait) {
                         font-size: 2.5vh;
                     }
 
-                    @media (min-width: 992px) {
+                    @media (min-width: 992px){
+                        font-size: 3vh;
+                        text-align: center;
+                    }
 
-                        text-align: right;
+                    @media (min-aspect-ratio: 16/8) {
+                        font-size: calc(16px + 1vh);
                     }
                 }
             }
@@ -116,14 +150,15 @@
             &:nth-of-type(3) {
                 display: none;
 
-                @media (min-width: 992px) {
+                @media (min-width: 992px)  and (min-height: 768px) {
                     display: flex;
+                    align-self: center;
 
                     div {
-                        width: 100px;
-                        height: 100px;
+                        width: 90px;
+                        height: 90px;
                         background-image: url('../../images/academic-slider.png');
-                        background-size: 100px;
+                        background-size: 90px;
                         background-repeat: no-repeat;
                         background-position: top;
                         animation: movingIcons 12s steps(3) infinite;
@@ -134,7 +169,7 @@
                             }
 
                             100% {
-                                background-position: 0 -350px;
+                                background-position: 0 -320px;
                             }
                         }
                     }
@@ -145,6 +180,10 @@
 
                 @media (min-width: 768px) {
                     min-height: 150px;
+                }
+
+                @media (min-aspect-ratio: 16/8) {
+                    min-height: 50px;
                 }
             }
         }

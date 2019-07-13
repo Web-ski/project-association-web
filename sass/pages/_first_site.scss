@@ -1,27 +1,30 @@
 body {
-    margin: 0 auto;    
+    margin: 0 auto;
 
     header {
-        width: 100%;   
+        //width: 100%;
         max-width: 1200px;
-        margin: 0 auto;            
+        margin: 0 auto;
         background-color: $nsa-bg-color;
 
     }
-main {
 
-    width: 100%;   
+    main {
+
+        width: 100%;
         max-width: 1200px;
-        margin: 0 auto;  
-    section {
+        margin: 0 auto;
 
-        @media (min-width: 576px) {
-            margin-bottom: 40px;
+        section {
+
+            @media (min-width: 576px) {
+                margin-bottom: 40px;
+            }
         }
-    } 
-}
-    /*sections*/
-       
+    }
 
-    /*footer*/    
+    /*sections*/
+
+
+    /*footer*/
 }
