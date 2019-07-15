@@ -1,3 +1,23 @@
 .smooth-stripes {
-    position: absolute;
+    display: none;
+
+    @media (min-width: 992px) {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 20%;
+
+        .smooth-stripes__element {
+            height: 100%;
+            width: 100%;
+            
+            .smooth-stripes__path {
+                stroke: $nsa-bg-dark2-color;
+                fill: $nsa-bg-dark2-color;
+            }
+        }
+    }
 }

@@ -1,6 +1,8 @@
 #description {
     padding-bottom: 20px;
     background-image: linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+    position: relative;
+    display: flex;
 
     @media only screen and (orientation: landscape) {
         width: 100%;
@@ -15,7 +17,12 @@
 
     @media (min-width: 768px) {
         padding: 30px 0;
-    }    
+    }  
+    
+    @media (min-width: 992px) {
+        height: 400px;
+        padding: 10px 0;
+    }
 
     .row {
         width: 100%;
@@ -48,10 +55,14 @@
             }
         }
 
-        div {
+        .description__content {
+
+            @media (min-width: 992px) {                
+                padding: 0;
+            }
 
             div {
-                color: $nsa-bg-color;
+                color: $nsa-bg-color;                
 
                 p.h4 {
                     @media only screen and (orientation: landscape) {

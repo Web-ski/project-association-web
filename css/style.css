@@ -390,6 +390,30 @@ li {
   color: #ffbb00;
 }
 
+.smooth-stripes {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .smooth-stripes {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 20%;
+  }
+  .smooth-stripes .smooth-stripes__element {
+    height: 100%;
+    width: 100%;
+  }
+  .smooth-stripes .smooth-stripes__element .smooth-stripes__path {
+    stroke: #004d5f;
+    fill: #004d5f;
+  }
+}
+
 /* Sections */
 .navbar {
   height: 100px;
@@ -855,6 +879,10 @@ li {
   padding-bottom: 20px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
   background-image: linear-gradient(to bottom, #004d5f, #00152c);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (orientation: landscape) {
@@ -875,6 +903,13 @@ li {
 @media (min-width: 768px) {
   #description {
     padding: 30px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #description {
+    height: 400px;
+    padding: 10px 0;
   }
 }
 
@@ -911,23 +946,29 @@ li {
   }
 }
 
-#description .row div div {
+@media (min-width: 992px) {
+  #description .row .description__content {
+    padding: 0;
+  }
+}
+
+#description .row .description__content div {
   color: white;
 }
 
 @media only screen and (orientation: landscape) {
-  #description .row div div p.h4 {
+  #description .row .description__content div p.h4 {
     padding-top: 20px;
   }
 }
 
 @media only screen and (orientation: landscape) and (max-height: 320px) {
-  #description .row div div p.h4 {
+  #description .row .description__content div p.h4 {
     padding-top: 0px;
   }
 }
 
-#description .row div div .h4 {
+#description .row .description__content div .h4 {
   font-weight: bold;
 }
 
