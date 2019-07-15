@@ -2,82 +2,193 @@
     background-color: $nsa-bg-dark-color;
     background-image: url("../../images/map-of-europe-equidistant-hi.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+    background-position: bottom right;
+    background-size: contain;
     border-radius: 0%;
     text-align: center;
     position: relative;
     color: $nsa-bg-color;
     height: 80vh;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
-    display: flex;
-    padding: 10px;
+    padding: 10px;    
 
     @media only screen and (orientation: landscape) {
         width: 100%;
         max-width: 1200px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
+    @media (min-width: 576px) and (max-width: 1199px) {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 1200px;
+    }
 
+    @media (min-width: 992px), (min-aspect-ratio: 4/3) {
+        background-image: url("../../images/map-of-europe-equidistant-hi.png"), url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+        background-position: bottom right, left, left;
+        background-size: contain, 25%, 35%;
+        //height: 150px;
+    }
 
     .row {
+        padding: 5%;
+        display: flex;
         justify-content: center;
-        align-items: stretch;
+        align-items: center;
         width: 100%;
+        height: 100%;
         margin: 0 auto;
+        position: relative;
+        flex-direction: column;
+        // flex-wrap: wrap;
+
+        @media only screen and (orientation: portrait) {
+            //flex-wrap: nowrap;
+            flex-direction: column;
+        }
+
+        @media (min-aspect-ratio: 16/7) {
+            padding: 2%;
+        }
 
         .box {
-            margin: 6% 10%;
+            //margin: 6% 10%;
+            display: flex;
+            flex: 1;
+            align-items: center;
 
-            @media only screen and (orientation: landscape) {
-                margin: 1% 1%;
+            @media only screen and (orientation: portrait) {
+                //flex-wrap: nowrap;
             }
 
             &:first-of-type {
-                min-height: 150px;
                 background-image: url("../../images/atom-seablue-col.png");
-                background-size: 150px;
+                background-size: 15vh;
                 background-repeat: no-repeat;
-                background-position: top;
+                background-position: center;
                 line-height: 100%;
 
-                @media only screen and (orientation: landscape) {
-                    background-size: 80px;
-                    min-height: 80px;
-                    background-image: url("../../images/atom-blue-green-col.png");
+                @media only screen and (orientation: portrait) {
+                    flex: 2;
+                    padding: 0 8%;
                 }
 
-                @media only screen and (orientation: landscape) and (max-height: 600px) {
-                    min-height: 78px;
-                    background-size: 68px;
+                @media (min-width: 992px) {
+                    height: 15vh;
+                    flex: 2;
+                }
+
+                @media (min-aspect-ratio: 16/7) {
+                    flex: 1;
+                }
+
+                img {
+                    display: inline-block;
+                    height: 5vw;
+                    line-height: 66px;
+                    margin: 0 5px 5px;
+
+                    @media only screen and (orientation: portrait) {
+                        height: 5vh;
+                    }
+
+                    @media (min-aspect-ratio: 16/7) {
+                        height: 40px;
+                    }
+                }
+
+                .jumbotron__title {
+                    display: inline-block;
+                    text-shadow: 0px 0px 10px $nsa-bg-dark-color;
+                    font-size: 5vw;
+
+                    @media only screen and (orientation: portrait) {
+                        font-size: 6vh;
+                    }
+
+                    @media only screen and (min-width: 1200px) {
+                        font-size: 66px;
+                    }   
+                    
+                    @media (min-aspect-ratio: 16/7) {
+                        font-size: calc(38px + 2vh);
+                    }
+                }
+
+                .my-4 {
+                    background-color: $nsa-bg-color;
                 }
             }
 
-            h1 {
-                font-weight: normal;
-                font-size: 45px;
-                display: inline-block;
-                margin-top: 10%;
-                text-shadow: 0px 0px 10px $nsa-bg-dark-color;
+            &:nth-of-type(2) {
+                align-self: center;
 
-                @media only screen and (orientation: landscape) {
-                    font-size: 40px;
-                    margin: 10px 0;
-                    line-height: 60px;
+                @media (min-width: 992px) {
+                    max-width: 700px;
                 }
 
-                @media only screen and (orientation: landscape) and (max-height: 600px) {
-                    font-size: 38px;
-                    margin: 10px 0;
-                    line-height: 46px;
+                .jumbotron__text {
+                    font-size: calc(14px + 1vh);
+                    color: $nsa-text-dark-color;
+
+                    @media only screen and (orientation: portrait) {
+                        font-size: 2.5vh;
+                    }
+
+                    @media (min-width: 992px){
+                        font-size: 3vh;
+                        text-align: center;
+                    }
+
+                    @media (min-width: 1200px) {
+                        font-size: calc(14px + 1vh);
+                    } 
+
+                    @media (min-aspect-ratio: 16/7) {
+                        font-size: calc(16px + 1vh);
+                    }
                 }
             }
 
+            &:nth-of-type(3) {
+                display: none;
 
-            .my-4 {
-                background-color: $nsa-bg-color;
+                @media (min-width: 992px)  and (min-height: 768px) {
+                    display: flex;
+                    align-self: center;
+
+                    div {
+                        width: 90px;
+                        height: 90px;
+                        background-image: url('../../images/academic-slider.png');
+                        background-size: 90px;
+                        background-repeat: no-repeat;
+                        background-position: top;
+                        animation: movingIcons 12s steps(3) infinite;
+
+                        @keyframes movingIcons {
+                            0% {
+                                background-position: 0 0;
+                            }
+
+                            100% {
+                                background-position: 0 -320px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {                
+
+                @media (min-width: 768px) {
+                    min-height: calc(50px + 1vh);
+                }
+
+                @media (min-aspect-ratio: 16/7) {
+                    min-height: 50px;
+                }
             }
         }
     }

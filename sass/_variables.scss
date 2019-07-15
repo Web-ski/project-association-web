@@ -7,6 +7,7 @@ $nsa-border-color: rgb(48, 48, 48);
 $nsa-text-light-color: rgb(255, 255, 255);
 $nsa-text-dark-color: rgb(189, 206, 214);
 $nsa-map-blue-color: rgb(32, 74, 135);
+$nsa-contrast-color: #ffbb00;
 
 /* Font sizes */
 
@@ -18,5 +19,7 @@ $nsa-title-font: 'Roboto Slab', serif;
 /* Paddings and margins */
 
 /* Media queries */
+$nsa-long-screen: min-aspect-ratio;
+$nsa-long-screen-value: 16/7;
 
 /* Border tables */

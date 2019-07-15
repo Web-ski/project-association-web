@@ -7,13 +7,29 @@
         max-width: 1200px;
     }
 
+    @media (min-width: 576px) and (max-width: 1199px) {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 1200px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 30px 0;
+    }    
+
     .row {
+        width: 100%;
         padding: 0 5%;
+        margin: 0;
 
         div {
-            padding-top: 20px;            
+            padding-top: 20px;
 
-            div {
+            div.img-container {                 
+                
+                @media (min-width: 576px) {
+                    padding-top: 0px;
+                }
 
                 img {
                     width: 150px;
@@ -22,7 +38,6 @@
                         width: 80px;
                         padding-top: 20px;
                     }
-                
                 }
             }
 
@@ -48,7 +63,6 @@
                     }
 
                 }
-
 
                 .h4 {
                     font-weight: bold;
