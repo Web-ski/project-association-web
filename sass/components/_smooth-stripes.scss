@@ -13,10 +13,15 @@
         .smooth-stripes__element {
             height: 100%;
             width: 100%;
-            
-            .smooth-stripes__path {
-                stroke: $nsa-bg-dark2-color;
-                fill: $nsa-bg-dark2-color;
+
+            .smooth-stripes__stripe {
+                stroke: $nsa-map-blue-color;
+                fill: $nsa-map-blue-color;
+
+                &:nth-of-type(2) {
+                    stroke: $nsa-bg-dark2-color;
+                    fill: $nsa-bg-dark2-color;
+                }
             }
         }
     }

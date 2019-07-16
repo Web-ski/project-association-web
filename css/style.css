@@ -408,7 +408,11 @@ li {
     height: 100%;
     width: 100%;
   }
-  .smooth-stripes .smooth-stripes__element .smooth-stripes__path {
+  .smooth-stripes .smooth-stripes__element .smooth-stripes__stripe {
+    stroke: #204a87;
+    fill: #204a87;
+  }
+  .smooth-stripes .smooth-stripes__element .smooth-stripes__stripe:nth-of-type(2) {
     stroke: #004d5f;
     fill: #004d5f;
   }
