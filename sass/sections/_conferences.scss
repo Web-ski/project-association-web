@@ -1,0 +1,89 @@
+#conferences {
+    background-color: $nsa-text-dark-color;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+    .section-title {
+        text-align: center;
+        margin: 0;
+        padding: 30px 0 0;
+    }
+
+    .row {
+        padding: calc(20px + 2%) calc(5px + 1%) calc(20px + 5%);
+        margin: 0 auto;
+
+        div {
+            //padding: 20px 5px;
+            //height: calc(50px + 20%);
+            //display: flex;
+            //align-items: center;                
+        }
+
+        .conference__content {
+
+            #carouselConference {
+
+                .carousel-inner {
+
+                    .carousel-item {
+
+                        .carousel-container {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .carousel-container__item {
+                                flex: 1;
+
+                                &:nth-of-type(2) {
+                                    flex: 8;
+                                }
+
+                                .carousel-container__inner-container {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    flex-direction: row;
+                                    background-color: $nsa-bg-color;
+                                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+
+                                    @media (orientation: portrait) {
+                                        flex-direction: column;
+                                    }
+
+                                    .carousel-container__item {
+                                        flex: 1;
+                                        padding: 8px;
+                                        text-align: left;
+                                        align-items: stretch;                                        
+
+                                        &:first-of-type {
+                                            flex: 2;
+                                        }
+
+                                        img {
+                                            width: 100%;
+                                        }
+
+                                        div {                                            
+                                            display: flex;
+                                            bottom: 0;
+                                            justify-content: center;
+                                            align-items: flex-end;
+                                            
+                                            a {
+                                                color: $nsa-main-color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

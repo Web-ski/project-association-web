@@ -2,6 +2,7 @@
 @import "normalize";
 
 /* Components */
+@import "components/titles";
 @import "components/buttons";
 @import "components/circle-img";
 @import "components/smooth-stripes";
@@ -9,9 +10,13 @@
 /* Sections */
 @import "sections/navbar";
 @import "sections/jumbotron";
+@import "sections/header";
 @import "sections/info";
 @import "sections/description";
 @import "sections/executive";
+@import "sections/activity";
+@import "sections/conferences";
+@import "sections/books";
 @import "sections/footer";
 
 /* Pages / Views */

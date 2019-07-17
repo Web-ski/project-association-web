@@ -1,0 +1,88 @@
+#activity {
+    padding: 20px 0 20px;
+
+    .row {
+        padding: 0 5%;
+        margin: 0 auto;
+
+
+        @media (min-width: 768px) {
+            padding: calc(10px + 1%) 1%;
+        }
+
+        .activity__col {
+            //padding-top: 20px;
+            color: $nsa-map-blue-color;
+            border: solid 2px $nsa-text-dark-color;
+            border-radius: 5px;
+            margin: 30px 10px;
+            transition: 0.3s;
+
+            @media (min-width: 768px) {
+
+                &:hover {
+                    border-color: $nsa-map-blue-color;
+                    //border-color: $nsa-contrast-color;
+                }
+            }
+
+            @media (min-width: 992px) {
+                padding: 0 20px;
+            }
+
+            div,
+            a {
+                padding: 20px 5px;
+                //height: calc(50px + 20%);
+                //display: flex;
+                //align-items: center;                
+            }
+
+            .activity__img {
+
+                position: relative;
+                height: 50px;
+
+                img {
+                    position: absolute;
+                    width: 100px;
+                    padding: 10px;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: white;
+                }
+            }
+
+            .activity__title {
+
+                .article-title {                    
+                    //color: $nsa-bg-dark2-color;
+                    color: $nsa-map-blue-color;
+                    //text-align: center;
+                    //font-size: 17px;
+                }
+            }
+
+            .activity__description {
+                text-align: left;
+
+                p {
+                    font-weight: 100;
+                    color: $nsa-border-color;
+                    font-size: 17px;
+                }
+            }
+
+            /*&:first-of-type {
+                div {
+
+                    img {
+                        width: 100px;
+                        padding: 0px;
+                    }
+                }
+            }*/
+        }
+    }
+}

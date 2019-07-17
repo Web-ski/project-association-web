@@ -1,0 +1,79 @@
+//page
+.page-title {
+    font-weight: bold;   
+    padding: 10px 0;
+    font-size: 2rem;                   
+
+    @media (orientation: landscape) {
+        padding: 10px 0 0;
+    }
+
+    @media (min-width: 768px) {
+        padding: 10px 0;
+        font-size: 3rem;
+    }
+}
+
+.page-title_white {
+    color: $nsa-text-light-color;
+}
+
+.page-title_dark {
+    color: $nsa-main-color;
+}
+
+//sections
+.section-title {
+    font-weight: bold;   
+    padding: 10px 0;
+    font-size: 1.7rem;
+
+    @media (orientation: landscape) {
+        padding: 10px 0 0;
+    }
+
+    @media (min-width: 768px) {
+        padding: 10px 0 10px;
+        font-size: 2rem;
+    }
+}
+
+.section-title_white {
+    color: $nsa-text-light-color;
+}
+
+.section-title_dark {
+    color: $nsa-main-color;
+}
+
+//article
+.article-title {
+    font-weight: bold;   
+    font-size: 1.5rem;
+    margin: 0;
+
+    @media (orientation: landscape) {
+        font-size: 1.6rem;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1.6rem;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.7rem;
+    }
+}
+
+.article-title_dark {
+    color: $nsa-main-color;
+}
+
+.article-title_white {
+    color: $nsa-contrast-color;
+}
+
+.article-text {
+    font-size: 16px;
+    color: $nsa-border-color;
+}

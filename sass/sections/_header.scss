@@ -1,0 +1,30 @@
+#second-page {
+    #description {
+        height: 250px;
+        //min-width: 500px;
+        position: relative;
+        overflow: hidden;
+
+        .row {
+
+            .img-container {
+                position: absolute;                
+                //height: 100%;
+                //width: 100%;
+                top: 0;
+                right: 0;
+
+                display: none;
+
+                @media (min-width: 768px) {
+                    display: block;
+
+                img {
+                    height: 100%;
+
+                   transform: translate(40%, -40%);
+                }}
+            }
+        }
+    }
+}
