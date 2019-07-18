@@ -22,7 +22,29 @@
 
                 &:hover {
                     border-color: $nsa-map-blue-color;
+
                     //border-color: $nsa-contrast-color;
+
+                    .activity__img {
+
+                        .activity__img-box {
+
+                            @keyframes rotation {
+                                0% {
+                                    transform: rotate(0deg);
+                                }
+
+                                100% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+
+                            img {
+                                animation-name: rotation;
+                                animation-duration: 1s;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -43,20 +65,25 @@
                 position: relative;
                 height: 50px;
 
-                img {
+                .activity__img-box {
                     position: absolute;
-                    width: 100px;
+                    width: 120px;
                     padding: 10px;
-                    top: 0;
+                    top: 0px;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     background-color: white;
+
+                    img {
+                        width: 100px;
+                        padding: 10px;
+                    }
                 }
             }
 
             .activity__title {
 
-                .article-title {                    
+                .article-title {
                     //color: $nsa-bg-dark2-color;
                     color: $nsa-map-blue-color;
                     //text-align: center;

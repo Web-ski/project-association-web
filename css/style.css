@@ -61,6 +61,7 @@ li {
   font-weight: bold;
   padding: 10px 0;
   font-size: 2rem;
+  text-shadow: 0px 0px 10px #00152c;
 }
 
 @media (orientation: landscape) {
@@ -105,6 +106,7 @@ li {
 
 .section-title_white {
   color: white;
+  text-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .section-title_dark {
@@ -814,7 +816,6 @@ li {
 
 .jumbotron .row .box:first-of-type .jumbotron__title {
   display: inline-block;
-  text-shadow: 0px 0px 10px #00152c;
   font-size: 5vw;
 }
 
@@ -1177,6 +1178,32 @@ li {
   #activity .row .activity__col:hover {
     border-color: #204a87;
   }
+  @-webkit-keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  #activity .row .activity__col:hover .activity__img .activity__img-box img {
+    -webkit-animation-name: rotation;
+            animation-name: rotation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1195,15 +1222,20 @@ li {
   height: 50px;
 }
 
-#activity .row .activity__col .activity__img img {
+#activity .row .activity__col .activity__img .activity__img-box {
   position: absolute;
-  width: 100px;
+  width: 120px;
   padding: 10px;
-  top: 0;
+  top: 0px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: white;
+}
+
+#activity .row .activity__col .activity__img .activity__img-box img {
+  width: 100px;
+  padding: 10px;
 }
 
 #activity .row .activity__col .activity__title .article-title {

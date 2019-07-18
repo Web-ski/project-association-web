@@ -9,7 +9,7 @@
     position: relative;
     color: $nsa-bg-color;
     height: 80vh;
-    padding: 10px;    
+    padding: 10px;
 
     @media only screen and (orientation: landscape) {
         width: 100%;
@@ -24,7 +24,8 @@
         max-width: 1200px;
     }
 
-    @media (min-width: 992px), (min-aspect-ratio: 4/3) {
+    @media (min-width: 992px),
+    (min-aspect-ratio: 4/3) {
         background-image: url("../../images/map-of-europe-equidistant-hi.png"), url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
         background-position: bottom right, left, left;
         background-size: contain, 25%, 35%;
@@ -100,7 +101,6 @@
 
                 .jumbotron__title {
                     display: inline-block;
-                    text-shadow: 0px 0px 10px $nsa-bg-dark-color;
                     font-size: 5vw;
 
                     @media only screen and (orientation: portrait) {
@@ -109,8 +109,8 @@
 
                     @media only screen and (min-width: 1200px) {
                         font-size: 66px;
-                    }   
-                    
+                    }
+
                     @media (min-aspect-ratio: 16/7) {
                         font-size: calc(38px + 2vh);
                     }
@@ -136,14 +136,14 @@
                         font-size: 2.5vh;
                     }
 
-                    @media (min-width: 992px){
+                    @media (min-width: 992px) {
                         font-size: 3vh;
                         text-align: center;
                     }
 
                     @media (min-width: 1200px) {
                         font-size: calc(14px + 1vh);
-                    } 
+                    }
 
                     @media (min-aspect-ratio: 16/7) {
                         font-size: calc(16px + 1vh);
@@ -154,7 +154,7 @@
             &:nth-of-type(3) {
                 display: none;
 
-                @media (min-width: 992px)  and (min-height: 768px) {
+                @media (min-width: 992px) and (min-height: 768px) {
                     display: flex;
                     align-self: center;
 
@@ -180,7 +180,7 @@
                 }
             }
 
-            &:nth-of-type(4) {                
+            &:nth-of-type(4) {
 
                 @media (min-width: 768px) {
                     min-height: calc(50px + 1vh);
