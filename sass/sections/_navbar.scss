@@ -124,6 +124,11 @@
     }
 
     .nav_links_added {
-        height: 80vh;
+        height: 88vh;
+        box-shadow: 0 15px 20px -10px rgba(0, 0, 0, .1);
+
+        @media (min-width: 992px) {
+            height: 80px;
+        }
     }
 }
