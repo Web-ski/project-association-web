@@ -1,0 +1,29 @@
+#journal {
+    .section-title {
+        text-align: center;
+        //margin: 0;
+        padding: 20px 0;
+    }
+
+    .row {
+        div {            
+            div {                
+
+                div {
+                    div {
+                        .card-body {
+                            .article-title {
+                                margin-bottom: 10px;
+                            }
+
+                            .card-text {
+                                color: $nsa-border-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

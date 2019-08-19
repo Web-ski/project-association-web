@@ -1372,6 +1372,23 @@ li {
   color: #414141;
 }
 
+#journal .section-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#journal .row div div {
+  width: 100%;
+}
+
+#journal .row div div div div .card-body .article-title {
+  margin-bottom: 10px;
+}
+
+#journal .row div div div div .card-body .card-text {
+  color: #414141;
+}
+
 footer {
   background-color: #414141;
   color: white;
