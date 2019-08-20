@@ -1385,6 +1385,19 @@ li {
   color: #414141;
 }
 
+#journal .row div div div div .card-body .list-group {
+  text-align: center;
+}
+
+#journal .row div div div div .card-body .list-group .list-group-item-action.active {
+  background-color: #bdced6;
+  border: #bdced6;
+}
+
+#journal .row:hover div div div div .card-body .list-group .list-group-item-action.active {
+  background-color: #204a87;
+}
+
 footer {
   background-color: #414141;
   color: white;
