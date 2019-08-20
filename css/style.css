@@ -1377,10 +1377,6 @@ li {
   padding: 20px 0;
 }
 
-#journal .row div div {
-  width: 100%;
-}
-
 #journal .row div div div div .card-body .article-title {
   margin-bottom: 10px;
 }
