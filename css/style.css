@@ -696,7 +696,7 @@ li {
   }
 }
 
-@media (min-width: 576px) and (max-width: 1199px) {
+@media (min-width: 576px) and (max-width: 1199.9px) {
   .jumbotron {
     margin-left: 0;
     margin-right: 0;
@@ -1015,7 +1015,7 @@ li {
   }
 }
 
-@media (min-width: 576px) and (max-width: 1199px) {
+@media (min-width: 576px) and (max-width: 1199.9px) {
   #description {
     margin-left: 0;
     margin-right: 0;
@@ -1056,7 +1056,7 @@ li {
   width: 150px;
 }
 
-@media only screen and (orientation: landscape) and (max-height: 320px) {
+@media only screen and (orientation: landscape) and (max-height: 320.9px) {
   #description .row div div.img-container img {
     width: 80px;
     padding-top: 20px;
@@ -1085,7 +1085,7 @@ li {
   }
 }
 
-@media only screen and (orientation: landscape) and (max-height: 320px) {
+@media only screen and (orientation: landscape) and (max-height: 320.9px) {
   #description .row .description__content div p.h4 {
     padding-top: 0px;
   }
