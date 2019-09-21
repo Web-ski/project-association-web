@@ -1276,6 +1276,12 @@ li {
   margin: 0 auto;
 }
 
+@media screen and (orientation: portrait) {
+  #conferences .row .conference__content {
+    padding: 0;
+  }
+}
+
 #conferences .row .conference__content #carouselConference .carousel-inner .carousel-item .carousel-container {
   display: -webkit-box;
   display: -ms-flexbox;

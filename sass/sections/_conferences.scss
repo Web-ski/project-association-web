@@ -23,6 +23,10 @@
 
         .conference__content {
 
+            @media screen and (orientation: portrait) {
+                padding: 0;
+            }
+
             #carouselConference {
 
                 .carousel-inner {
