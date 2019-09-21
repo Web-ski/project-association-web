@@ -3,10 +3,10 @@
 
 An example website of an international scientific association.
 Created using: 
-- HTML5, 
-- SCSS, 
-- JavaScript, 
-- Bootstrap 4; 
-- Git;
-- Visual Studio Code;
-- GIMP.
+- HTML5 
+- SCSS 
+- JavaScript 
+- Bootstrap 4 
+- Git
+- Visual Studio Code
+- GIMP
