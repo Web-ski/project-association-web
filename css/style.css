@@ -1557,4 +1557,17 @@ body main {
 }
 
 /* Third Page*/
+#science-council {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#science-council .row .col {
+  padding: 20px;
+  border: solid 4px rgba(189, 206, 214, 0.5);
+}
+
+#science-council .row .col .table thead tr {
+  background-color: rgba(189, 206, 214, 0.5);
+}
 /*# sourceMappingURL=style.css.map */

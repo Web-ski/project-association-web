@@ -1,0 +1,23 @@
+#science-council {
+    width: 100%;
+    max-width: 1200px;
+
+    .row {
+
+        .col {
+            padding: 20px;
+            border: solid 4px rgba(189, 206, 214, .5);
+
+            .table {
+
+                thead {
+
+                    tr {
+                        background-color: rgba(189, 206, 214, .5);
+                    }
+                }
+                                
+            }
+        }
+    }
+}
