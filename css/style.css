@@ -1560,14 +1560,35 @@ body main {
 #science-council {
   width: 100%;
   max-width: 1200px;
+  background-color: #bdced6;
 }
 
 #science-council .row .col {
-  padding: 20px;
-  border: solid 4px rgba(189, 206, 214, 0.5);
+  padding: 40px;
 }
 
-#science-council .row .col .table thead tr {
-  background-color: rgba(189, 206, 214, 0.5);
+#science-council .row .col .container {
+  padding: 20px;
+  background-color: white;
+}
+
+#science-council .row .col .container .table {
+  background-color: white;
+  margin-bottom: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1);
+          box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+#science-council .row .col .container .table thead tr {
+  background-color: rgba(189, 206, 214, 0.3);
+}
+
+@media only screen and (orientation: portrait) {
+  #science-council .row .col {
+    padding: 10px;
+  }
+  #science-council .row .col .container {
+    padding: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

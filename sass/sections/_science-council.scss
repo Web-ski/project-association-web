@@ -1,22 +1,38 @@
 #science-council {
     width: 100%;
     max-width: 1200px;
+    background-color: $nsa-text-dark-color;
 
     .row {
 
         .col {
-            padding: 20px;
-            border: solid 4px rgba(189, 206, 214, .5);
+            padding: 40px;
 
-            .table {
+            .container {
+                padding: 20px;
+                background-color: $nsa-bg-color;
 
-                thead {
+                .table {
+                    background-color: $nsa-bg-color;
+                    margin-bottom: 0;
+                    box-shadow: rgba(0, 0, 0, 0.1);
 
-                    tr {
-                        background-color: rgba(189, 206, 214, .5);
+                    thead {
+
+                        tr {
+                            background-color: rgba(189, 206, 214, .3);
+                        }
                     }
+
                 }
-                                
+            }
+
+            @media only screen and (orientation: portrait) {
+                padding: 10px;
+
+                .container {
+                    padding: 5px;
+                }
             }
         }
     }
