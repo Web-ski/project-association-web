@@ -9,16 +9,21 @@
 
 /* Sections */
 @import "sections/navbar";
+@import "sections/footer";
+
+/* First Page*/
+@import "pages/first_site";
 @import "sections/jumbotron";
 @import "sections/header";
 @import "sections/info";
 @import "sections/description";
 @import "sections/executive";
+
+/* Second Page*/
 @import "sections/activity";
 @import "sections/conferences";
 @import "sections/books";
 @import "sections/journal";
-@import "sections/footer";
 
-/* Pages / Views */
-@import "pages/first_site";
+/* Third Page*/
+@import "sections/science-council";
