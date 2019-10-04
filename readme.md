@@ -1,7 +1,7 @@
 # Web of an Academic Association 
 ### (project-association-web)
 
-An example website of an international scientific association.
+The example website of an international scientific association.
 Created using: 
 - HTML5 
 - SCSS 
