@@ -1074,13 +1074,13 @@ body main {
   }
 }
 
-#second-page #description {
+#second-page #description, #third-page #description, #fourth-page #description {
   height: 250px;
   position: relative;
   overflow: hidden;
 }
 
-#second-page #description .row .img-container {
+#second-page #description .row .img-container, #third-page #description .row .img-container, #fourth-page #description .row .img-container {
   position: absolute;
   top: 0;
   right: 0;
@@ -1088,10 +1088,10 @@ body main {
 }
 
 @media (min-width: 768px) {
-  #second-page #description .row .img-container {
+  #second-page #description .row .img-container, #third-page #description .row .img-container, #fourth-page #description .row .img-container {
     display: block;
   }
-  #second-page #description .row .img-container img {
+  #second-page #description .row .img-container img, #third-page #description .row .img-container img, #fourth-page #description .row .img-container img {
     height: 100%;
     -webkit-transform: translate(40%, -40%);
             transform: translate(40%, -40%);
