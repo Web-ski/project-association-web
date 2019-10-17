@@ -1664,9 +1664,19 @@ body main {
   padding: 10px;
   background-color: #002d5f;
   border: solid 1px #002d5f;
+  border-radius: 0;
+  line-height: 1em;
 }
 
 #contact .row .col form .form-group .btn-outline-light:hover {
   background-color: #ffbb00;
+}
+
+@media only screen and (max-width: 960px) {
+  #contact .row .col form .form-group .btn-outline-light {
+    display: block;
+    margin: 0 auto;
+    max-width: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
