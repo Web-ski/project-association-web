@@ -132,7 +132,7 @@
                     font-size: 140%;
                     line-height: 160%;
                     letter-spacing: 1px;
-                    color: $nsa-text-dark-color;
+                    color: $nsa-text-light-color;
 
                     @media only screen and (orientation: portrait) {
                         font-size: 2.5vh;
@@ -157,7 +157,7 @@
                             }
 
                             to {
-                                border-color: lightgrey;
+                                border-color: $nsa-text-light-color;
                             }
                         }
 
@@ -165,8 +165,6 @@
                         height: 1.5em;
                         line-height: 1.5em;
                         width: 2px;
-
-                        
                     }
                 }
             }

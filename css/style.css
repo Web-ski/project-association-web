@@ -997,7 +997,7 @@ body main {
   font-size: 140%;
   line-height: 160%;
   letter-spacing: 1px;
-  color: #bdced6;
+  color: white;
 }
 
 @media only screen and (orientation: portrait) {
@@ -1030,7 +1030,7 @@ body main {
     border-color: transparent;
   }
   to {
-    border-color: lightgrey;
+    border-color: white;
   }
 }
 
@@ -1039,7 +1039,7 @@ body main {
     border-color: transparent;
   }
   to {
-    border-color: lightgrey;
+    border-color: white;
   }
 }
 

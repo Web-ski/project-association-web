@@ -13,22 +13,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log(text.length);
 
-    const typeTxt = function() {
-        pulsar.style.borderLeft = 'solid 2px lightgrey';        
+    const typeTxt = function () {
+        pulsar.style.borderLeft = 'solid 2px rgb(255, 255, 255)';
         pulsar.style.animation = 'pulsar .4s alternate infinite';
 
         setTimeout(function () {
             for (let i = 0; i < text.length; i++) {
                 setTimeout(function () {
-                   jumbotronTxt.firstChild.textContent += text[i];
+                    jumbotronTxt.firstChild.textContent += text[i];
                 }, i * 200);
             }
 
             setTimeout(function () {
                 pulsar.removeAttribute('style', 'borderLeft');
                 pulsar.style.width = '2px';
-
-            }, 200*text.length + 2000);
+            }, 200 * text.length + 2000);
         }, 2000);
     }
 
