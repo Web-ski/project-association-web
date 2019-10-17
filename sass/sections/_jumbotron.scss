@@ -129,7 +129,9 @@
                 }
 
                 .jumbotron__text {
-                    font-size: calc(14px + 1vh);
+                    font-size: 140%;
+                    line-height: 160%;
+                    letter-spacing: 1px;
                     color: $nsa-text-dark-color;
 
                     @media only screen and (orientation: portrait) {
@@ -147,6 +149,24 @@
 
                     @media (min-aspect-ratio: 16/7) {
                         font-size: calc(16px + 1vh);
+                    }
+
+                    @keyframes pulsar {
+                            from {
+                                border-color: transparent;
+                            }
+
+                            to {
+                                border-color: lightgrey;
+                            }
+                        }
+
+                    .pulsar {
+                        height: 1.5em;
+                        line-height: 1.5em;
+                        width: 2px;
+
+                        
                     }
                 }
             }

@@ -994,7 +994,9 @@ body main {
 }
 
 .jumbotron .row .box:nth-of-type(2) .jumbotron__text {
-  font-size: calc(14px + 1vh);
+  font-size: 140%;
+  line-height: 160%;
+  letter-spacing: 1px;
   color: #bdced6;
 }
 
@@ -1021,6 +1023,30 @@ body main {
   .jumbotron .row .box:nth-of-type(2) .jumbotron__text {
     font-size: calc(16px + 1vh);
   }
+}
+
+@-webkit-keyframes pulsar {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: lightgrey;
+  }
+}
+
+@keyframes pulsar {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: lightgrey;
+  }
+}
+
+.jumbotron .row .box:nth-of-type(2) .jumbotron__text .pulsar {
+  height: 1.5em;
+  line-height: 1.5em;
+  width: 2px;
 }
 
 .jumbotron .row .box:nth-of-type(3) {
