@@ -1155,15 +1155,6 @@ body main {
 #info .row div {
   padding-top: 20px;
   color: #204a87;
-  /*&:first-of-type {
-                div {
-
-                    img {
-                        width: 100px;
-                        padding: 0px;
-                    }
-                }
-            }*/
 }
 
 @media (min-width: 992px) {
@@ -1353,15 +1344,6 @@ body main {
   margin: 30px 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  /*&:first-of-type {
-                div {
-
-                    img {
-                        width: 100px;
-                        padding: 0px;
-                    }
-                }
-            }*/
 }
 
 @media (min-width: 768px) {

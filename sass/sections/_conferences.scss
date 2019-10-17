@@ -14,13 +14,6 @@
         padding: calc(20px + 2%) calc(5px + 1%) calc(20px + 5%);
         margin: 0 auto;
 
-        div {
-            //padding: 20px 5px;
-            //height: calc(50px + 20%);
-            //display: flex;
-            //align-items: center;                
-        }
-
         .conference__content {
 
             @media screen and (orientation: portrait) {
@@ -61,7 +54,7 @@
                                         flex: 1;
                                         padding: 8px;
                                         text-align: left;
-                                        align-items: stretch;                                        
+                                        align-items: stretch;
 
                                         &:first-of-type {
                                             flex: 2;
@@ -71,12 +64,12 @@
                                             width: 100%;
                                         }
 
-                                        div {                                            
+                                        div {
                                             display: flex;
                                             bottom: 0;
                                             justify-content: center;
                                             align-items: flex-end;
-                                            
+
                                             a {
                                                 color: $nsa-main-color;
                                             }

@@ -27,8 +27,6 @@
                 &:hover {
                     border-color: $nsa-map-blue-color;
 
-                    //border-color: $nsa-contrast-color;
-
                     .activity__img {
 
                         .activity__img-box {
@@ -59,9 +57,6 @@
             div,
             a {
                 padding: 20px 5px;
-                //height: calc(50px + 20%);
-                //display: flex;
-                //align-items: center;                
             }
 
             .activity__img {
@@ -88,10 +83,7 @@
             .activity__title {
 
                 .article-title {
-                    //color: $nsa-bg-dark2-color;
                     color: $nsa-map-blue-color;
-                    //text-align: center;
-                    //font-size: 17px;
                 }
             }
 
@@ -104,16 +96,6 @@
                     font-size: 17px;
                 }
             }
-
-            /*&:first-of-type {
-                div {
-
-                    img {
-                        width: 100px;
-                        padding: 0px;
-                    }
-                }
-            }*/
         }
     }
 }
