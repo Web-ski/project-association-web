@@ -1,0 +1,46 @@
+#contact {
+  width: 100%;
+  max-width: 1200px;
+
+  .row {
+    .col {
+      padding: 20px;
+      margin: 0 auto;
+
+      .article__item {
+        text-align: center;
+        margin: 40px;
+
+        .article__image {
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
+
+    .col {
+      form {
+        .form-group {
+
+          .form-control {
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+          }
+
+          .btn-outline-light {
+            padding: 10px;
+            background-color: $nsa-main-color;
+            border: solid 1px $nsa-main-color;
+
+            &:hover {
+              background-color: $nsa-contrast-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
