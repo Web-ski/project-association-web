@@ -32,6 +32,14 @@
         div {
             padding-top: 20px;
 
+            div {
+                .description {
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+
             div.img-container {
 
                 @media (min-width: 576px) {
@@ -39,7 +47,7 @@
                 }
 
                 img {
-                    width: 150px;
+                    width: 150px;                    
 
                     @media only screen and (orientation: landscape) and (max-height: 320.9px) {
                         width: 80px;

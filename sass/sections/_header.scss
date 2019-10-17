@@ -3,7 +3,7 @@
 #fourth-page {
     #description {
         height: 250px;
-        //min-width: 500px;
+        min-width: 319px;
         position: relative;
         overflow: hidden;
 
@@ -15,7 +15,6 @@
                 //width: 100%;
                 top: 0;
                 right: 0;
-
                 display: none;
 
                 @media (min-width: 768px) {
@@ -23,9 +22,32 @@
 
                     img {
                         height: 100%;
-
                         transform: translate(40%, -40%);
                     }
+                }
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: transparent;
+                background-image: url(../../images/atom-seablue-col.png);
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-size: 220px;
+                height: 100%;
+                width: 100%;
+                transform: translate(20%, -20%);
+                -webkit-transform: translate(20%, -20%);
+                -moz-transform: translate(20%, -20%);
+                -ms-transform: translate(20%, -20%);
+                -o-transform: translate(20%, -20%);
+
+                @media only screen and (min-width: 768px) {
+                    display: none;
                 }
             }
         }
