@@ -814,11 +814,10 @@ body main {
 
 .jumbotron {
   background-color: #00152c;
-  background-image: url("../../images/map-of-europe-equidistant-hi.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
-  background-image: url("../../images/map-of-europe-equidistant-hi.png"), linear-gradient(to bottom, #004d5f, #00152c);
+  background-image: url("../../images/map-world-blue2.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
+  background-image: url("../../images/map-world-blue2.png"), linear-gradient(to bottom, #004d5f, #00152c);
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+  background-position: center;
   border-radius: 0%;
   text-align: center;
   position: relative;
@@ -833,6 +832,7 @@ body main {
     max-width: 1200px;
     margin-left: 0;
     margin-right: 0;
+    background-size: contain;
   }
 }
 
@@ -846,8 +846,8 @@ body main {
 
 @media (min-width: 992px), (min-aspect-ratio: 4 / 3) {
   .jumbotron {
-    background-image: url("../../images/map-of-europe-equidistant-hi.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
-    background-image: url("../../images/map-of-europe-equidistant-hi.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), linear-gradient(to bottom, #004d5f, #00152c);
+    background-image: url("../../images/map-world-blue2.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
+    background-image: url("../../images/map-world-blue2.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), linear-gradient(to bottom, #004d5f, #00152c);
     background-position: bottom right, left, left;
     background-size: contain, 25%, 35%;
   }
@@ -956,6 +956,7 @@ body main {
 
 .jumbotron .row .box:first-of-type .jumbotron__title {
   display: inline-block;
+  text-shadow: 0 0 10px black;
   font-size: 5vw;
 }
 
@@ -998,6 +999,7 @@ body main {
   line-height: 150%;
   letter-spacing: 1px;
   color: #fcc11f;
+  text-shadow: 0 0 10px black;
 }
 
 @media only screen and (orientation: portrait) {

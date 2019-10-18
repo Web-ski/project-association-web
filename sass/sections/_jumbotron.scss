@@ -1,9 +1,9 @@
 .jumbotron {
     background-color: $nsa-bg-dark-color;
-    background-image: url("../../images/map-of-europe-equidistant-hi.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+    background-image: url("../../images/map-world-blue2.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
     background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: contain;
+    background-position: center;
+    //background-size: contain;
     border-radius: 0%;
     text-align: center;
     position: relative;
@@ -16,6 +16,7 @@
         max-width: 1200px;
         margin-left: 0;
         margin-right: 0;
+        background-size: contain;
     }
 
     @media (min-width: 576px) and (max-width: 1199.9px) {
@@ -26,7 +27,7 @@
 
     @media (min-width: 992px),
     (min-aspect-ratio: 4/3) {
-        background-image: url("../../images/map-of-europe-equidistant-hi.png"), url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+        background-image: url("../../images/map-world-blue2.png"), url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
         background-position: bottom right, left, left;
         background-size: contain, 25%, 35%;
         //height: 150px;
@@ -101,6 +102,7 @@
 
                 .jumbotron__title {
                     display: inline-block;
+                    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
                     font-size: 5vw;
 
                     @media only screen and (orientation: portrait) {
@@ -133,6 +135,7 @@
                     line-height: 150%;
                     letter-spacing: 1px;
                     color: $nsa-contrast-light-color;
+                    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 
                     @media only screen and (orientation: portrait) {
                         font-size: 2.5vh;
