@@ -1,6 +1,6 @@
 .jumbotron {
     background-color: $nsa-bg-dark-color;
-    background-image: url("../../images/map-world-blue2.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+    background-image: url("../images/map-world-blue2.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
     background-repeat: no-repeat;
     background-position: center;
     //background-size: contain;
@@ -27,7 +27,7 @@
 
     @media (min-width: 992px),
     (min-aspect-ratio: 4/3) {
-        background-image: url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), url("../../images/map-world-blue2.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+        background-image: url('../images/keyboard-right-arrow-button-blue2.png'), url('../images/keyboard-right-arrow-button-blue3.png'), url("../images/map-world-blue2.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
         background-position: left, left, right;
         background-size: 25%, 35%, contain, contain;
         //height: 150px;
@@ -65,7 +65,7 @@
             }
 
             &:first-of-type {
-                background-image: url("../../images/atom-seablue-col.png");
+                background-image: url("../images/atom-seablue-col.png");
                 background-size: 15vh;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -182,7 +182,7 @@
                     div {
                         width: 90px;
                         height: 90px;
-                        background-image: url('../../images/academic-slider.png');
+                        background-image: url('../images/academic-slider.png');
                         background-size: 90px;
                         background-repeat: no-repeat;
                         background-position: top;
