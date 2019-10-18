@@ -1156,11 +1156,51 @@ body main {
   background-size: 220px;
   height: 100%;
   width: 100%;
-  transform: translate(20%, -20%);
-  -webkit-transform: translate(20%, -20%);
-  -moz-transform: translate(20%, -20%);
-  -ms-transform: translate(20%, -20%);
-  -o-transform: translate(20%, -20%);
+  transform: translate(15%, -15%);
+  -webkit-transform: translate(15%, -15%);
+  -moz-transform: translate(15%, -15%);
+  -ms-transform: translate(15%, -15%);
+  -o-transform: translate(15%, -15%);
+  animation: glide 2s ease-in;
+  -webkit-animation: glide 3s ease-in-out;
+}
+
+@-webkit-keyframes glide {
+  0% {
+    transform: translate(25%, -25%);
+    -webkit-transform: translate(25%, -25%);
+    -moz-transform: translate(25%, -25%);
+    -ms-transform: translate(25%, -25%);
+    -o-transform: translate(25%, -25%);
+    background-size: 200px;
+  }
+  100% {
+    transform: translate(15%, -15%);
+    -webkit-transform: translate(15%, -15%);
+    -moz-transform: translate(15%, -15%);
+    -ms-transform: translate(15%, -15%);
+    -o-transform: translate(15%, -15%);
+    background-size: 220px;
+  }
+}
+
+@keyframes glide {
+  0% {
+    transform: translate(25%, -25%);
+    -webkit-transform: translate(25%, -25%);
+    -moz-transform: translate(25%, -25%);
+    -ms-transform: translate(25%, -25%);
+    -o-transform: translate(25%, -25%);
+    background-size: 200px;
+  }
+  100% {
+    transform: translate(15%, -15%);
+    -webkit-transform: translate(15%, -15%);
+    -moz-transform: translate(15%, -15%);
+    -ms-transform: translate(15%, -15%);
+    -o-transform: translate(15%, -15%);
+    background-size: 220px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
