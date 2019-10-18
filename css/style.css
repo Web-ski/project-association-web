@@ -1471,6 +1471,13 @@ body main {
 }
 
 @media screen and (orientation: portrait) {
+  #conferences .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (orientation: portrait) {
   #conferences .row .conference__content {
     padding: 0;
   }
@@ -1563,6 +1570,20 @@ body main {
 
 #conferences .row .conference__content #carouselConference .carousel-inner .carousel-item .carousel-container .carousel-container__item .carousel-container__inner-container .carousel-container__item div a {
   color: #002d5f;
+}
+
+@media screen and (orientation: portrait) {
+  #conferences .row .conference__content #carouselConference .carousel-control-prev,
+  #conferences .row .conference__content #carouselConference .carousel-control-next {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  #conferences .row .conference__content #carouselConference .carousel-control-prev,
+  #conferences .row .conference__content #carouselConference .carousel-control-next {
+    width: 10%;
+  }
 }
 
 #books .section-title {
