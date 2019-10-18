@@ -846,10 +846,10 @@ body main {
 
 @media (min-width: 992px), (min-aspect-ratio: 4 / 3) {
   .jumbotron {
-    background-image: url("../../images/map-world-blue2.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
-    background-image: url("../../images/map-world-blue2.png"), url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), linear-gradient(to bottom, #004d5f, #00152c);
-    background-position: bottom right, left, left;
-    background-size: contain, 25%, 35%;
+    background-image: url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), url("../../images/map-world-blue2.png"), -webkit-gradient(linear, left top, left bottom, from(#004d5f), to(#00152c));
+    background-image: url("../../images/keyboard-right-arrow-button-blue2.png"), url("../../images/keyboard-right-arrow-button-blue3.png"), url("../../images/map-world-blue2.png"), linear-gradient(to bottom, #004d5f, #00152c);
+    background-position: left, left, right;
+    background-size: 25%, 35%, contain, contain;
   }
 }
 

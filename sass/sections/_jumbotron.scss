@@ -27,9 +27,9 @@
 
     @media (min-width: 992px),
     (min-aspect-ratio: 4/3) {
-        background-image: url("../../images/map-world-blue2.png"), url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
-        background-position: bottom right, left, left;
-        background-size: contain, 25%, 35%;
+        background-image: url('../../images/keyboard-right-arrow-button-blue2.png'), url('../../images/keyboard-right-arrow-button-blue3.png'), url("../../images/map-world-blue2.png"), linear-gradient(to bottom, $nsa-bg-dark2-color, $nsa-bg-dark-color);
+        background-position: left, left, right;
+        background-size: 25%, 35%, contain, contain;
         //height: 150px;
     }
 
