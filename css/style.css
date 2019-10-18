@@ -995,9 +995,9 @@ body main {
 
 .jumbotron .row .box:nth-of-type(2) .jumbotron__text {
   font-size: 140%;
-  line-height: 160%;
+  line-height: 150%;
   letter-spacing: 1px;
-  color: white;
+  color: #fcc11f;
 }
 
 @media only screen and (orientation: portrait) {
@@ -1030,7 +1030,7 @@ body main {
     border-color: transparent;
   }
   to {
-    border-color: white;
+    border-color: #fcc11f;
   }
 }
 
@@ -1039,7 +1039,7 @@ body main {
     border-color: transparent;
   }
   to {
-    border-color: white;
+    border-color: #fcc11f;
   }
 }
 
