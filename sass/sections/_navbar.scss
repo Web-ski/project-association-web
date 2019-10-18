@@ -1,135 +1,139 @@
 .navbar {
-    height: 100px;
-    width: 100%;
-    max-width: 1200px;
-    min-width: 319px;
-    margin: 0 auto;
-    padding: 0;
-    line-height: 90px;
-    z-index: 4;
-    position: relative;
+	height: 100px;
+	width: 100%;
+	max-width: 1200px;
+	min-width: 319px;
+	margin: 0 auto;
+	padding: 0;
+	line-height: 90px;
+	z-index: 4;
+	position: relative;
 
-    @media only screen and (orientation: landscape) {
-        height: 90px;
-        line-height: 80px;
-    }
+	@media only screen and (orientation: landscape) {
+		height: 90px;
+		line-height: 80px;
+	}
 
-    @media only screen and (orientation: landscape) and (max-height: 600px) {
-        height: 80px;
-        line-height: 70px;
-    }
+	@media only screen and (orientation: landscape) and (max-height: 600px) {
+		height: 80px;
+		line-height: 70px;
+	}
 
-    .navbar-brand {
-        padding-left: 20px;
+	.navbar-brand {
+		padding-left: 20px;
 
-        img {
-            max-height: 60px;
-            max-width: 140px;
-        }
-    }
+		img {
+			max-height: 60px;
+			max-width: 140px;
+		}
+	}
 
-    /*list*/
-    .nav_links {
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        height: 0px;
-        background-color: $nsa-bg-color;
-        text-align: center;
-        overflow: hidden;
-        transition: .5s;
+	/*list*/
+	.nav_links {
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+		height: 0px;
+		background-color: $nsa-bg-color;
+		text-align: center;
+		overflow: hidden;
+		transition: .5s;
 
-        .row {
-            justify-content: center;
-            flex-direction: column;
-            margin: 10vh auto;
+		.row {
+			justify-content: center;
+			flex-direction: column;
+			margin: 10vh auto;
 
-            @media only screen and (max-height: 600px) {
-                margin-top: 2vh;
-            }
+			@media only screen and (max-height: 600px) {
+				margin-top: 2vh;
+			}
 
-            .box {
-                height: 20%;
+			.box {
+				height: 20%;
 
-                @media only screen and (orientation: landscape) {
-                    height: 15vh;
-                }
+				@media only screen and (orientation: landscape) {
+					height: 15vh;
+				}
 
-                .nav-item {
-                    display: inline-block;
-                    text-decoration: none;
-                    color: $nsa-main-color;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    margin: 0 auto;
-                    width: auto;
-                }
+				.nav-item {
+					display: inline-block;
+					text-decoration: none;
+					color: $nsa-main-color;
+					font-size: 20px;
+					text-transform: uppercase;
+					margin: 0 auto;
+					width: auto;
+					padding: 0;
+				}
 
-                &:hover {
+				&:hover {
 
-                    .nav-item {
-                        color: $nsa-border-color;
-                        position: relative;
+					.nav-item {
+						color: $nsa-border-color;
+						position: relative;
 
-                        &:after {
-                            content: '';
-                            display: block;
-                            border-bottom: solid 1px $nsa-border-color;
-                            position: absolute;
-                            bottom: 30%;
-                            animation: movingBorderA 1s ease-out;
-                            left: 4%;
-                            width: 88%;
+						&:after {
+							content: '';
+							display: block;
+							border-bottom: solid 2px $nsa-border-color;
+							position: absolute;
+							bottom: 30%;
+							animation: movingBorderA .5s ease-out;
+							//left: 4%;
+							width: 100%;
 
-                            @keyframes movingBorderA {
-                                0% {
-                                    left: 48%;
-                                    width: 5%;
-                                }
+							@keyframes movingBorderA {
+								0% {
+									left: 48%;
+									width: 5%;
+								}
 
+								100% {
+									left: 0%;
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 
-                                100% {
-                                    left: 4%;
-                                    width: 88%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+		@media (min-width: 992px) {
+			height: 80px;
+			line-height: 80px;
+			width: 80%;
 
-        @media (min-width: 992px) {
-            height: 80px;
-            line-height: 80px;
-            width: 80%;
+			.row {
+				flex-direction: row;
+				height: 80px;
+				margin: 0;
 
-            .row {
-                flex-direction: row;
-                height: 80px;
-                margin: 0;
+				.box {
+					height: 100%;
+					padding: 0 3%;
+					min-width: 100px;
 
-                .box {
-                    height: 100%;
-                    padding: 0 3%;
-                    min-width: 100px;
+					.nav-item {
+						padding: 0;
+						//min-width: 167px;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
 
-                    .nav-item {
-                        padding: 0;
-                        //min-width: 167px;
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-    }
+	.nav_links_added {
+		height: 88vh;
+		box-shadow: 0 15px 20px -10px rgba(0, 0, 0, .1);
 
-    .nav_links_added {
-        height: 88vh;
-        box-shadow: 0 15px 20px -10px rgba(0, 0, 0, .1);
+		@media (min-width: 992px) {
+			height: 80px;
+		}
+	}
+}
 
-        @media (min-width: 992px) {
-            height: 80px;
-        }
-    }
+.active-nav {
+	font-weight: bold;
 }

@@ -182,9 +182,10 @@
         &:after {
             content: '';
             display: block;
-            border-bottom: solid 1px $nsa-border-color;
+            border-bottom: solid 1.5px $nsa-border-color;
             position: absolute;
             animation: movingBorder 2s ease-out infinite;
+            width: 100%;
 
             @keyframes movingBorder {
                 0% {
@@ -193,8 +194,8 @@
                 }
 
                 50% {
-                    left: 8%;
-                    width: 78%;
+                    left: 0%;
+                    width: 100%;
                 }
 
                 100% {
